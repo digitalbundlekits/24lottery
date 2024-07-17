@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html translate="no" data-dpr="1" style="font-size: 43.16px;">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex,nofollow">
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+    <title>lottery</title>
+
+
+
+    <link rel="shortcut icon" href="/images/bitbug_favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="/css/wallet/chunk-6e8d5c6e.0fc0ae11.css">
+    <style>
+        .customer {
+            position: fixed;
+            bottom: 2.4rem;
+            right: .4rem;
+            width: 1.49333rem;
+            height: 1.49333rem;
+            border-radius: 50%;
+            z-index: 100;
+        }
+
+        .customer img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+
+        @media screen and (max-width: 500px) {
+            .mian {
+                width: 100%;
+                min-height: 100vh
+            }
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+
+            padding: 0;
+            margin: 0;
+        }
+
+        html,
+        body {
+
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            background-color: #9195a3;
+        }
+
+        #app {
+            width: 10rem;
+            height: -webkit-fit-content;
+            height: fit-content;
+            min-height: 100vh
+        }
+
+        @media screen and (max-width: 500px) {
+            #app {
+                width: 100%;
+                min-height: 100vh
+            }
+
+            #app::-webkit-scrollbar {
+                width: 0;
+                background: transparent
+            }
+
+            .van-popup.van-popup--bottom {
+                max-width: none
+            }
+        }
+
+        #app {
+            background: #f7f8ff
+        }
+
+        .notification-container[data-v-a2c34980] {
+            padding: 0 .32rem .4rem;
+        }
+
+        .navbar[data-v-2d3dc984] {
+            height: 1.22667rem;
+            z-index: 100;
+            -webkit-box-flex: 0;
+            -webkit-flex: none;
+            flex: none
+        }
+
+        .navbar-fixed[data-v-2d3dc984] {
+            position: fixed;
+            top: 0;
+            left: 50%;
+            width: 10rem;
+            -webkit-transform: translateX(-50%);
+            transform: translate(-50%);
+            -webkit-user-select: none;
+            user-select: none;
+            background: #f7f8ff;
+            z-index: 100
+        }
+
+        .navbar-fixed.wc .navbar__content-left[data-v-2d3dc984],
+        .navbar-fixed.wc .navbar__content-title[data-v-2d3dc984],
+        .navbar-fixed.wc .navbar__content-left .van-icon[data-v-2d3dc984],
+        .navbar-fixed.wc .navbar__content-title .van-icon[data-v-2d3dc984] {
+            color: #fff
+        }
+
+        .navbar__content[data-v-2d3dc984] {
+            position: relative;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            height: 1.22667rem
+        }
+
+        .navbar__content-left[data-v-2d3dc984] {
+            position: absolute;
+            left: .32rem;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            height: 100%;
+            top: 0
+        }
+
+        .navbar__content-left .van-icon[data-v-2d3dc984] {
+            color: #333;
+            font-size: .48rem
+        }
+
+        .navbar__content-center[data-v-2d3dc984] {
+            color: #333;
+            font-size: .48rem;
+            line-height: .48rem
+        }
+
+        .navbar__content-center .headLogo[data-v-2d3dc984] {
+            width: 2.98667rem;
+            height: 1.12rem;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center
+        }
+
+        .navbar__content-right[data-v-2d3dc984] {
+            position: absolute;
+            right: .32rem
+        }
+
+        @media screen and (max-width: 500px) {
+            .navbar-fixed[data-v-2d3dc984] {
+                width: 100%;
+                left: 0;
+                -webkit-transform: translateX(0);
+                transform: translate(0)
+            }
+        }
+
+        .infiniteScroll[data-v-004096dd] {
+            min-height: 2.66667rem;
+            border-radius: .16rem;
+        }
+
+        .notification-container[data-v-a2c34980] {
+            padding: 0 .32rem .4rem
+        }
+
+        .notification-container-content[data-v-a2c34980] {
+            min-height: 2.66667rem;
+            background: #ffffff;
+            box-shadow: 0 .05333rem .21333rem #d0d0ed5c;
+            border-radius: .26667rem;
+            padding: .34667rem .32rem;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            justify-content: space-between;
+            margin-bottom: .32rem
+        }
+
+        .notification-container-content-title[data-v-a2c34980] {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            -webkit-box-pack: start;
+            -webkit-justify-content: flex-start;
+            justify-content: flex-start
+        }
+
+        .notification-container-content-title span[data-v-a2c34980] {
+            font-size: .42667rem;
+            color: #151515
+        }
+
+        .notification-container-content-title img[data-v-a2c34980] {
+            width: .66667rem;
+            margin-right: .16rem
+        }
+
+        .notification-container-content-detail[data-v-a2c34980] {
+            height: 100%;
+            font-size: .34667rem;
+            line-height: .66667rem;
+            color: #666;
+            padding: .4rem .6rem .4rem .8rem
+        }
+
+        .notification-container-content h5[data-v-a2c34980] {
+            font-size: .32rem;
+            color: #888;
+            padding-left: .8rem
+        }
+
+        .notification-container-empty[data-v-a2c34980] {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%)
+        }
+
+        .infiniteScroll__loading[data-v-004096dd] {
+            width: 100%;
+            min-height: 1.4rem;
+            margin-top: auto;
+            padding-bottom: .4rem;
+            color: #999;
+            font-size: .37333rem;
+            text-align: center;
+        }
+
+        .navbar-back[data-v-106b99c8] {
+            width: .69333rem;
+            height: .69333rem;
+        }
+    </style>
+</head>
+
+<body style="font-size: 12px;" class="">
+
+
+    <div id="app" data-v-app="">
+
+        <div data-v-432e6ed0="" class="home mian game">
+
+            <div data-v-a2c34980="" class="notification-container" style="--76181987: 'Roboto', 'Inter', sans-serif;">
+                <div data-v-2d3dc984="" data-v-a2c34980="" class="navbar">
+                    <div data-v-2d3dc984="" class="navbar-fixed"
+                        style="background: linear-gradient(90deg,#ff8e8a 0%,#ffbfa0 100%)">
+                        <div data-v-2d3dc984="" class="navbar__content">
+                            <div data-v-2d3dc984="" class="navbar__content-left" onclick="location.href='/win'"><i
+                                    data-v-2d3dc984="" class="van-badge__wrapper van-icon van-icon-arrow-left"><img
+                                        data-v-a9660e98="" data-v-106b99c8="" src="/images/back.c3244ab0.png"
+                                        class="navbar-back"></i>
+                            </div>
+                            <div data-v-2d3dc984="" class="navbar__content-center"><!---->
+                                <div data-v-2d3dc984="" class="navbar__content-title">Notification</div>
+                            </div>
+                            <div data-v-2d3dc984="" class="navbar__content-right"></div>
+                        </div>
+                    </div>
+                </div>
+                <div data-v-004096dd="" data-v-a2c34980="" class="infiniteScroll sysMessage__container-msgWrapper"
+                    id="refreshe09b04853d35494e8c910c47be9613e7">
+                    <div data-v-a2c34980="" class="notification-container-content">
+                        <div data-v-a2c34980="" class="notification-container-content-title"><img data-v-a2c34980=""
+                                alt="" class=""
+                                data-origin="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAOVBMVEUAAAD/cXP/cXL/cHL/cXL/cHD/cHL/cXH/cHL/cXP/cHL/cHH/cHL/cHL/cXL/cHD/cHH/cnL/cXLULIXhAAAAEnRSTlMAX9+/7xCfHz9vj3/Pr08w3y/JxTCZAAACFklEQVRo3u2Z687bIAxAAYO55lK//8NuUyZZS5oFGEb7tp7fjQ7BMbi2+pK4iAApKEE80MEup0nEZCWCW4ikLb7Qr2gBx04nrB/teO10AQY7tKU3hKEhT8QIvUrY6YYg9xpMGqTIlu6xTk7B6LEKmdAHIEZkv0KyVIXuNxiqBXsEXqOlBmzz+RTRUCte1eJeOoGlE+OC4tea9fcnvefl91N+J4hoaQjuNpWBhrFV3aTMyMgXGgVH3sUFDtZDYmgky+l61hISo5SKRLISq5QnaQl5hfKSTRV5iVYkL4kzJHmGBGdIlhkSmCExH0kTH8lH8rUl/04ygrIzJDDj0oozrl9VJhQSyhtpSVDfLShe3P3ABX3gRSTqhISkzJAs7yUw+ON6j17syI/rlk0nsIJ/sRkXYgIjEferalvzUiTaHle2EBFsb0jaVGsCyX4XEyLYvixhYF9ieBTl0t304GSEpP1Tqwr6d4sf3XF98ETT2edEIsZieNg3bOhDMbmxjeixIxPX1l44a+qX5zoSSpubBtEt0NHW96WxXZu7zgasSUQm9E0osG0ECNfrrYbS9EzsG0w6aBnLOtuyv4zDZweTe6ctP48ZE2qWZLonuWvGFCp/KjD+rCm+4njJi+RG30yasWHOztiw9W40KRx7HC/x9s9Ktb8pWdJdjS4blqzG48rlNBbA4bnIEUEbyY+YNQjmoCSn/me+AV95bGodftFJAAAAAElFTkSuQmCC"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAOVBMVEUAAAD/cXP/cXL/cHL/cXL/cHD/cHL/cXH/cHL/cXP/cHL/cHH/cHL/cHL/cXL/cHD/cHH/cnL/cXLULIXhAAAAEnRSTlMAX9+/7xCfHz9vj3/Pr08w3y/JxTCZAAACFklEQVRo3u2Z687bIAxAAYO55lK//8NuUyZZS5oFGEb7tp7fjQ7BMbi2+pK4iAApKEE80MEup0nEZCWCW4ikLb7Qr2gBx04nrB/teO10AQY7tKU3hKEhT8QIvUrY6YYg9xpMGqTIlu6xTk7B6LEKmdAHIEZkv0KyVIXuNxiqBXsEXqOlBmzz+RTRUCte1eJeOoGlE+OC4tea9fcnvefl91N+J4hoaQjuNpWBhrFV3aTMyMgXGgVH3sUFDtZDYmgky+l61hISo5SKRLISq5QnaQl5hfKSTRV5iVYkL4kzJHmGBGdIlhkSmCExH0kTH8lH8rUl/04ygrIzJDDj0oozrl9VJhQSyhtpSVDfLShe3P3ABX3gRSTqhISkzJAs7yUw+ON6j17syI/rlk0nsIJ/sRkXYgIjEferalvzUiTaHle2EBFsb0jaVGsCyX4XEyLYvixhYF9ieBTl0t304GSEpP1Tqwr6d4sf3XF98ETT2edEIsZieNg3bOhDMbmxjeixIxPX1l44a+qX5zoSSpubBtEt0NHW96WxXZu7zgasSUQm9E0osG0ECNfrrYbS9EzsG0w6aBnLOtuyv4zDZweTe6ctP48ZE2qWZLonuWvGFCp/KjD+rCm+4njJi+RG30yasWHOztiw9W40KRx7HC/x9s9Ktb8pWdJdjS4blqzG48rlNBbA4bnIEUEbyY+YNQjmoCSn/me+AV95bGodftFJAAAAAElFTkSuQmCC"><span
+                                data-v-a2c34980="">Welcome to The24Lottery!</span></div>
+                        <div data-v-a2c34980="" class="notification-container-content-detail">Welcome to The24Lottery! We
+                            have a variety of games, promos and bonus for you to enjoy, so why wait? Go register and
+                            enjoy the variety reward awaits you.</div>
+                        <h5 data-v-a2c34980=""><span id="currentDate"></span></h5>
+                    </div>
+                    <div data-v-a2c34980="" class="notification-container-content">
+                        <div data-v-a2c34980="" class="notification-container-content-title"><img data-v-a2c34980=""
+                                alt="" class=""
+                                data-origin="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAOVBMVEUAAAD/cXP/cXL/cHL/cXL/cHD/cHL/cXH/cHL/cXP/cHL/cHH/cHL/cHL/cXL/cHD/cHH/cnL/cXLULIXhAAAAEnRSTlMAX9+/7xCfHz9vj3/Pr08w3y/JxTCZAAACFklEQVRo3u2Z687bIAxAAYO55lK//8NuUyZZS5oFGEb7tp7fjQ7BMbi2+pK4iAApKEE80MEup0nEZCWCW4ikLb7Qr2gBx04nrB/teO10AQY7tKU3hKEhT8QIvUrY6YYg9xpMGqTIlu6xTk7B6LEKmdAHIEZkv0KyVIXuNxiqBXsEXqOlBmzz+RTRUCte1eJeOoGlE+OC4tea9fcnvefl91N+J4hoaQjuNpWBhrFV3aTMyMgXGgVH3sUFDtZDYmgky+l61hISo5SKRLISq5QnaQl5hfKSTRV5iVYkL4kzJHmGBGdIlhkSmCExH0kTH8lH8rUl/04ygrIzJDDj0oozrl9VJhQSyhtpSVDfLShe3P3ABX3gRSTqhISkzJAs7yUw+ON6j17syI/rlk0nsIJ/sRkXYgIjEferalvzUiTaHle2EBFsb0jaVGsCyX4XEyLYvixhYF9ieBTl0t304GSEpP1Tqwr6d4sf3XF98ETT2edEIsZieNg3bOhDMbmxjeixIxPX1l44a+qX5zoSSpubBtEt0NHW96WxXZu7zgasSUQm9E0osG0ECNfrrYbS9EzsG0w6aBnLOtuyv4zDZweTe6ctP48ZE2qWZLonuWvGFCp/KjD+rCm+4njJi+RG30yasWHOztiw9W40KRx7HC/x9s9Ktb8pWdJdjS4blqzG48rlNBbA4bnIEUEbyY+YNQjmoCSn/me+AV95bGodftFJAAAAAElFTkSuQmCC"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAOVBMVEUAAAD/cXP/cXL/cHL/cXL/cHD/cHL/cXH/cHL/cXP/cHL/cHH/cHL/cHL/cXL/cHD/cHH/cnL/cXLULIXhAAAAEnRSTlMAX9+/7xCfHz9vj3/Pr08w3y/JxTCZAAACFklEQVRo3u2Z687bIAxAAYO55lK//8NuUyZZS5oFGEb7tp7fjQ7BMbi2+pK4iAApKEE80MEup0nEZCWCW4ikLb7Qr2gBx04nrB/teO10AQY7tKU3hKEhT8QIvUrY6YYg9xpMGqTIlu6xTk7B6LEKmdAHIEZkv0KyVIXuNxiqBXsEXqOlBmzz+RTRUCte1eJeOoGlE+OC4tea9fcnvefl91N+J4hoaQjuNpWBhrFV3aTMyMgXGgVH3sUFDtZDYmgky+l61hISo5SKRLISq5QnaQl5hfKSTRV5iVYkL4kzJHmGBGdIlhkSmCExH0kTH8lH8rUl/04ygrIzJDDj0oozrl9VJhQSyhtpSVDfLShe3P3ABX3gRSTqhISkzJAs7yUw+ON6j17syI/rlk0nsIJ/sRkXYgIjEferalvzUiTaHle2EBFsb0jaVGsCyX4XEyLYvixhYF9ieBTl0t304GSEpP1Tqwr6d4sf3XF98ETT2edEIsZieNg3bOhDMbmxjeixIxPX1l44a+qX5zoSSpubBtEt0NHW96WxXZu7zgasSUQm9E0osG0ECNfrrYbS9EzsG0w6aBnLOtuyv4zDZweTe6ctP48ZE2qWZLonuWvGFCp/KjD+rCm+4njJi+RG30yasWHOztiw9W40KRx7HC/x9s9Ktb8pWdJdjS4blqzG48rlNBbA4bnIEUEbyY+YNQjmoCSn/me+AV95bGodftFJAAAAAElFTkSuQmCC"><span
+                                data-v-a2c34980="">AVOID FRAUD AND SUBMIT DEPOSIT TO SELF-SERVICE The24Lottery</span>
+                        </div>
+                        <div data-v-a2c34980="" class="notification-container-content-detail">If your deposit not
+                            receive, please send it directly to The24Lottery Self-service Center
+                            (https://www.the24lottery.com/wap/indexE.jsp) with provided proof deposit full detail
+                            showing
+                            (time,date,UTR number, amount and UPI ID receiver), wait till already get process, do not
+                            send to another person and trust anyone claiming to represent The24Lottery. Always verify
+                            their
+                            authenticity through the official community channels provided by The24Lottery. Your safety
+                            and
+                            trust in our community is very important to us .</div>
+                        <h5 data-v-a2c34980=""><span id="currentDateTime3"></span></span></h5>
+                    </div>
+                    <div data-v-a2c34980="" class="notification-container-content">
+                        <div data-v-a2c34980="" class="notification-container-content-title"><img data-v-a2c34980=""
+                                alt="" class=""
+                                data-origin="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAOVBMVEUAAAD/cXP/cXL/cHL/cXL/cHD/cHL/cXH/cHL/cXP/cHL/cHH/cHL/cHL/cXL/cHD/cHH/cnL/cXLULIXhAAAAEnRSTlMAX9+/7xCfHz9vj3/Pr08w3y/JxTCZAAACFklEQVRo3u2Z687bIAxAAYO55lK//8NuUyZZS5oFGEb7tp7fjQ7BMbi2+pK4iAApKEE80MEup0nEZCWCW4ikLb7Qr2gBx04nrB/teO10AQY7tKU3hKEhT8QIvUrY6YYg9xpMGqTIlu6xTk7B6LEKmdAHIEZkv0KyVIXuNxiqBXsEXqOlBmzz+RTRUCte1eJeOoGlE+OC4tea9fcnvefl91N+J4hoaQjuNpWBhrFV3aTMyMgXGgVH3sUFDtZDYmgky+l61hISo5SKRLISq5QnaQl5hfKSTRV5iVYkL4kzJHmGBGdIlhkSmCExH0kTH8lH8rUl/04ygrIzJDDj0oozrl9VJhQSyhtpSVDfLShe3P3ABX3gRSTqhISkzJAs7yUw+ON6j17syI/rlk0nsIJ/sRkXYgIjEferalvzUiTaHle2EBFsb0jaVGsCyX4XEyLYvixhYF9ieBTl0t304GSEpP1Tqwr6d4sf3XF98ETT2edEIsZieNg3bOhDMbmxjeixIxPX1l44a+qX5zoSSpubBtEt0NHW96WxXZu7zgasSUQm9E0osG0ECNfrrYbS9EzsG0w6aBnLOtuyv4zDZweTe6ctP48ZE2qWZLonuWvGFCp/KjD+rCm+4njJi+RG30yasWHOztiw9W40KRx7HC/x9s9Ktb8pWdJdjS4blqzG48rlNBbA4bnIEUEbyY+YNQjmoCSn/me+AV95bGodftFJAAAAAElFTkSuQmCC"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAOVBMVEUAAAD/cXP/cXL/cHL/cXL/cHD/cHL/cXH/cHL/cXP/cHL/cHH/cHL/cHL/cXL/cHD/cHH/cnL/cXLULIXhAAAAEnRSTlMAX9+/7xCfHz9vj3/Pr08w3y/JxTCZAAACFklEQVRo3u2Z687bIAxAAYO55lK//8NuUyZZS5oFGEb7tp7fjQ7BMbi2+pK4iAApKEE80MEup0nEZCWCW4ikLb7Qr2gBx04nrB/teO10AQY7tKU3hKEhT8QIvUrY6YYg9xpMGqTIlu6xTk7B6LEKmdAHIEZkv0KyVIXuNxiqBXsEXqOlBmzz+RTRUCte1eJeOoGlE+OC4tea9fcnvefl91N+J4hoaQjuNpWBhrFV3aTMyMgXGgVH3sUFDtZDYmgky+l61hISo5SKRLISq5QnaQl5hfKSTRV5iVYkL4kzJHmGBGdIlhkSmCExH0kTH8lH8rUl/04ygrIzJDDj0oozrl9VJhQSyhtpSVDfLShe3P3ABX3gRSTqhISkzJAs7yUw+ON6j17syI/rlk0nsIJ/sRkXYgIjEferalvzUiTaHle2EBFsb0jaVGsCyX4XEyLYvixhYF9ieBTl0t304GSEpP1Tqwr6d4sf3XF98ETT2edEIsZieNg3bOhDMbmxjeixIxPX1l44a+qX5zoSSpubBtEt0NHW96WxXZu7zgasSUQm9E0osG0ECNfrrYbS9EzsG0w6aBnLOtuyv4zDZweTe6ctP48ZE2qWZLonuWvGFCp/KjD+rCm+4njJi+RG30yasWHOztiw9W40KRx7HC/x9s9Ktb8pWdJdjS4blqzG48rlNBbA4bnIEUEbyY+YNQjmoCSn/me+AV95bGodftFJAAAAAElFTkSuQmCC"><span
+                                data-v-a2c34980="">PREVENTING BEING SCAMMED / HACKED DUE SOMEONE PROCLAIMING AS
+                                The24Lottery
+                                CUSTOMER SERVICE </span></div>
+                        <div data-v-a2c34980="" class="notification-container-content-detail">Our customer service never
+                            send a link to the member,if you received a link from someone who pro-claimed as
+                            The24Lottery
+                            customer service do not click the link to prevent being hack or lost data. Thank you</div>
+                        <h5 data-v-a2c34980=""> <span id="currentDateTime2"></span></h5>
+                    </div>
+                    <div data-v-004096dd="" class="infiniteScroll__loading"><!---->
+                        <div data-v-004096dd="">No more</div>
+                    </div>
+                </div>
+            </div>
+            <div class="customer" id="customerId" draggable="true" onclick="location.href='/keFuMenu'" style="--76181987: 'Roboto', 'Inter', sans-serif; --17a7a9f6: bahnschrift;">
+                <img class="" data-origin="/assets/png/icon_sevice-9f0c8455.png" src="/assets/png/icon_sevice-9f0c8455.png">
+            </div>
+
+        </div>
+        <script>
+            // Function to update the current date
+            function updateCurrentDate() {
+                // Get the current date
+                const currentDate = new Date();
+                // Format the date
+                const formattedDate = currentDate.toLocaleDateString();
+
+                // Update the content of the span element with the formatted date
+                document.getElementById("currentDate").innerText = formattedDate;
+                document.getElementById("currentDateTime2").innerText = formattedDateTime;
+                document.getElementById("currentDateTime3").innerText = formattedDateTime;
+            }
+
+            // Call the function initially to display the current date
+            updateCurrentDate();
+
+            // Update the current date every day at midnight
+            setInterval(function () {
+                // Get the current time
+                const currentTime = new Date();
+                // Check if it's midnight (00:00:00)
+                if (currentTime.getHours() === 0 && currentTime.getMinutes() === 0 && currentTime.getSeconds() === 0) {
+                    // Update the current date
+                    updateCurrentDate();
+                }
+            }, 1000);
+             // Get the draggable element
+    var draggableElement = document.getElementById('customerId');
+    
+    // Variables to store mouse position
+    var offsetX = 0;
+    var offsetY = 0;
+
+    // Function to handle touch start event
+    function handleTouchStart(e) {
+        offsetX = e.touches[0].clientX - draggableElement.getBoundingClientRect().left;
+        offsetY = e.touches[0].clientY - draggableElement.getBoundingClientRect().top;
+    }
+
+    // Function to handle touch move event
+    function handleTouchMove(e) {
+        e.preventDefault();
+        var x = e.touches[0].clientX - offsetX;
+        var y = e.touches[0].clientY - offsetY;
+        
+        // Update the position of the draggable element
+        draggableElement.style.left = x + 'px';
+        draggableElement.style.top = y + 'px';
+    }
+
+    // Add event listeners for touch events
+    draggableElement.addEventListener('touchstart', handleTouchStart, false);
+    draggableElement.addEventListener('touchmove', handleTouchMove, false);
+</script>
+        </script>
+
+
+        <div data-v-app=""></div><!---->
+
+</body>
+
+</html>

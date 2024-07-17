@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html translate="no" data-dpr="1" style="font-size: 48.24px;">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex,nofollow">
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+    <title>lottery</title>
+   
+    <link href="/css/checkIn/activity.css" rel="stylesheet" />
+    <link href="/css/checkIn/chunk-vendors.css" rel="stylesheet" />
+    <link href="/css/checkIn/app.css" rel="stylesheet" />
+    <link href="/css/checkIn/chunk.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="/images/bitbug_favicon.ico" type="image/x-icon">
+    <style>
+        #app,
+        .mian {
+            width: 100%;
+            min-height: 100vh;
+            background: white;
+            padding-top: 0rem;
+        }
+
+        .ar-loading-view .loading-wrapper img[data-v-1690b988] {
+            width: 2.66667rem
+        }
+
+        .shape[data-v-1690b988] {
+            width: .66667rem;
+            height: .66667rem;
+            border-radius: 50%;
+            position: absolute
+        }
+
+        .shape-1[data-v-1690b988] {
+            background-color: #0c67d7;
+            left: 0;
+            -webkit-animation: animationShape1-1690b988 .3s ease infinite alternate;
+            animation: animationShape1-1690b988 .3s ease infinite alternate
+        }
+
+        .shape-2[data-v-1690b988] {
+            background-color: #cd371c;
+            right: 0;
+            -webkit-animation: animationShape2-1690b988 .3s ease infinite .3s alternate;
+            animation: animationShape2-1690b988 .3s ease infinite .3s alternate
+        }
+
+        .shape-3[data-v-1690b988] {
+            background-color: #2c9d3f;
+            bottom: 0;
+            -webkit-animation: animationShape3-1690b988 .3s ease infinite .3s alternate;
+            animation: animationShape3-1690b988 .3s ease infinite .3s alternate
+        }
+
+        .shape-4[data-v-1690b988] {
+            background-color: #eca712;
+            right: 0;
+            bottom: 0;
+            -webkit-animation: animationShape4-1690b988 .3s ease infinite alternate;
+            animation: animationShape4-1690b988 .3s ease infinite alternate
+        }
+
+        @-webkit-keyframes animationContainer-1690b988 {
+            0% {
+                -webkit-transform: rotate(0);
+                transform: rotate(0)
+            }
+
+            to {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg)
+            }
+        }
+
+        @keyframes animationContainer-1690b988 {
+            0% {
+                -webkit-transform: rotate(0);
+                transform: rotate(0)
+            }
+
+            to {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg)
+            }
+        }
+
+        @-webkit-keyframes animationShape1-1690b988 {
+            0% {
+                -webkit-transform: translate(.13333rem, .13333rem);
+                transform: translate(.13333rem, .13333rem)
+            }
+
+            to {
+                -webkit-transform: translate(-.08rem, -.08rem);
+                transform: translate(-.08rem, -.08rem)
+            }
+        }
+
+        @keyframes animationShape1-1690b988 {
+            0% {
+                -webkit-transform: translate(.13333rem, .13333rem);
+                transform: translate(.13333rem, .13333rem)
+            }
+
+            to {
+                -webkit-transform: translate(-.08rem, -.08rem);
+                transform: translate(-.08rem, -.08rem)
+            }
+        }
+
+        @-webkit-keyframes animationShape2-1690b988 {
+            0% {
+                -webkit-transform: translate(-.13333rem, .13333rem);
+                transform: translate(-.13333rem, .13333rem)
+            }
+
+            to {
+                -webkit-transform: translate(.08rem, -.08rem);
+                transform: translate(.08rem, -.08rem)
+            }
+        }
+
+        @keyframes animationShape2-1690b988 {
+            0% {
+                -webkit-transform: translate(-.13333rem, .13333rem);
+                transform: translate(-.13333rem, .13333rem)
+            }
+
+            to {
+                -webkit-transform: translate(.08rem, -.08rem);
+                transform: translate(.08rem, -.08rem)
+            }
+        }
+
+        @-webkit-keyframes animationShape3-1690b988 {
+            0% {
+                -webkit-transform: translate(.13333rem, -.13333rem);
+                transform: translate(.13333rem, -.13333rem)
+            }
+
+            to {
+                -webkit-transform: translate(-.08rem, .08rem);
+                transform: translate(-.08rem, .08rem)
+            }
+        }
+
+        @keyframes animationShape3-1690b988 {
+            0% {
+                -webkit-transform: translate(.13333rem, -.13333rem);
+                transform: translate(.13333rem, -.13333rem)
+            }
+
+            to {
+                -webkit-transform: translate(-.08rem, .08rem);
+                transform: translate(-.08rem, .08rem)
+            }
+        }
+
+        @-webkit-keyframes animationShape4-1690b988 {
+            0% {
+                -webkit-transform: translate(-.13333rem, -.13333rem);
+                transform: translate(-.13333rem, -.13333rem)
+            }
+
+            to {
+                -webkit-transform: translate(.08rem, .08rem);
+                transform: translate(.08rem, .08rem)
+            }
+        }
+
+        @keyframes animationShape4-1690b988 {
+            0% {
+                -webkit-transform: translate(-.13333rem, -.13333rem);
+                transform: translate(-.13333rem, -.13333rem)
+            }
+
+            to {
+                -webkit-transform: translate(.08rem, .08rem);
+                transform: translate(.08rem, .08rem)
+            }
+        }
+
+        /* Add your CSS styles here */
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .loading-wrapper {
+            width: 1.6rem;
+            height: 1.6rem;
+            position: relative;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            -webkit-animation: animationContainer-1690b988 1s ease infinite;
+            animation: animationContainer-1690b988 1s ease infinite
+        }
+    </style>
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            background-color: #9195a3;
+            padding: 0;
+            margin: 0;
+        }
+
+        .block-click {
+            pointer-events: none;
+        }
+
+        .navbar[data-v-106b99c8] {
+            width: 100%;
+            max-width: 10.66667rem;
+            top: 0;
+            height: 1.33333rem;
+            line-height: 1.33333rem;
+            background: #eb8a1f;
+            box-shadow: inset 0rem 0rem 1rem 0rem #65006100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            color: #fff;
+            z-index: 999;
+        }
+
+        .mian[data-v-11ffe290] {
+            background: #f7f8ff;
+        }
+
+        .mian .check-box .list[data-v-11ffe290] {
+            background: #f7f8ff;
+        }
+
+        .mian .check-box .list .item[data-v-11ffe290] {
+            background: url(/assets/png/boxBg-16aa52fd.png) no-repeat 50%;
+            border-radius: none;
+        }
+    </style>
+</head>
+
+<body style="font-size: 12px;">
+    <div class="customer" id="customerId" draggable="true" onclick="location.href='/keFuMenu'" style="--76181987: 'Roboto', 'Inter', sans-serif; --17a7a9f6: bahnschrift;">
+        <img class="" data-origin="/assets/png/icon_sevice-9f0c8455.png" src="/assets/png/icon_sevice-9f0c8455.png">
+    </div>
+    <div id="app" data-v-app="">
+        <div data-v-7b283485="" class="mian">
+            <div class="van-overlay" style="z-index: 2001; --1b8f4054: 'Roboto', 'Inter', sans-serif; display: none;">
+                <!---->
+            </div>
+           
+            <div data-v-2d3dc984="" data-v-597cae54="" class="navbar"
+                style="--1b8f4054: 'Roboto', 'Inter', sans-serif;">
+                <div data-v-2d3dc984="" class="navbar-fixed wc"
+                    style="background: linear-gradient(90deg, rgb(255, 152, 1) 0%, rgb(230, 116, 1) 100%);">
+                    <div data-v-2d3dc984="" class="navbar__content">
+                        <div data-v-2d3dc984="" class="navbar__content-left"><!----></div>
+                        <div data-v-2d3dc984="" class="navbar__content-center">
+                            <div data-v-2d3dc984="" class="headLogo"
+                                style="background-image: url(/assets/png/h5setting_20230714005938hfia.png);">
+                            </div>
+                            <div data-v-2d3dc984="" class="navbar__content-title"></div>
+                        </div>
+                        <div data-v-2d3dc984="" class="navbar__content-right"></div>
+                    </div>
+                </div>
+            </div>
+            <div data-v-1864c20d="" data-v-597cae54="" class="activity-wrapper"
+                style="--1b8f4054: 'Roboto', 'Inter', sans-serif;">
+                <div data-v-1864c20d="" class="activity-banner">
+                    <div data-v-1864c20d="">
+                        <div data-v-1864c20d="" class="banner-title">Activity</div>
+                        <div data-v-1864c20d="" class="banner-para">Please remember to follow the event page</div>
+                        <div data-v-1864c20d="" class="banner-para">We will launch user feedback activities from time to
+                            time</div>
+                    </div>
+                </div>
+                <div data-v-1864c20d="" class="activity-panel"><!---->
+                    <div data-v-1864c20d="" class="activity-panel-header lg4">
+                        <div data-v-1864c20d="" class="header-item" onclick="location.href='/dailytask'">
+                            <div data-v-1864c20d="" class="van-badge__wrapper">
+                                <div data-v-1864c20d="" class="a1 bgcontainer"></div><!---->
+                            </div><span data-v-1864c20d="">Activity Award</span>
+                        </div>
+                        <div data-v-1864c20d="" class="header-item" onclick="location.href='/inviterule'">
+                            <div data-v-1864c20d="" class="van-badge__wrapper">
+                                <div data-v-1864c20d="" class="a2 bgcontainer"></div><!---->
+                            </div><span data-v-1864c20d="">Invitation bonus</span>
+                        </div>
+                        <div data-v-1864c20d="" class="header-item">
+                            <div data-v-1864c20d="" class="van-badge__wrapper">
+                                <div data-v-1864c20d="" class="a3 bgcontainer"></div><!---->
+                            </div><span data-v-1864c20d="">Betting rebate</span>
+                        </div>
+                        <div data-v-1864c20d="" class="header-item" onclick="location.href='/superjackpot'">
+                            <div data-v-1864c20d="" class="van-badge__wrapper">
+                                <div data-v-1864c20d="" class="a4 bgcontainer"></div><!---->
+                            </div><span data-v-1864c20d="">Super Jackpot</span>
+                        </div><!---->
+                    </div>
+                    <div data-v-1864c20d="" class="activity-panel-content">
+                        <div data-v-1864c20d="" class="content-title"><img data-v-1864c20d="" class=""
+                                data-origin="/assets/png/signInBanner-33f86d3f.png"
+                                src="/assets/png/signInBanner-33f86d3f.png">
+                            <div data-v-1864c20d="" class="content-para">Gifts</div>
+                            <p data-v-1864c20d="">Enter the redemption code to receive gift rewards</p>
+                        </div>
+                        <div data-v-1864c20d="" class="content-title" onclick="location.href='/checkDes'"><img
+                                data-v-1864c20d="" class=""
+                                data-origin="/assets/png/giftRedeem-45917887.png"
+                                src="/assets/png/giftRedeem-45917887.png">
+                            <div data-v-1864c20d="" class="content-para">Attendance bonus</div>
+                            <p data-v-1864c20d="">The more consecutive days you sign in, the higher the reward will be.
+                            </p>
+                        </div>
+                    </div>
+                </div><!---->
+                <div data-v-1864c20d="" role="feed" class="van-list" aria-busy="false">
+                    <div data-v-1864c20d="" class="activitySection__container">
+                        
+                        <div data-v-1864c20d="" class="box"><img data-v-1864c20d=""
+                                src="/assets/png/Banner_2024020413014726oj.png" class="act_1">
+                            <div data-v-1864c20d="" class="box-content">
+                                <div data-v-1864c20d="" class="box-title">Tc Lottery Official Channel </div>
+                            </div>
+                        </div>
+                        <div data-v-1864c20d="" class="box"><img data-v-1864c20d=""
+                                src="/assets/png/Banner_20240327152703xq8d.jpg" class="act_2">
+                            <div data-v-1864c20d="" class="box-content">
+                                <div data-v-1864c20d="" class="box-title">Real-Time Rebate</div>
+                            </div>
+                        </div>
+                        <div data-v-1864c20d="" class="box"><img data-v-1864c20d=""
+                                src="/assets/png/Banner_20240327152710ihgy.jpg" class="act_3">
+                            <div data-v-1864c20d="" class="box-content">
+                                <div data-v-1864c20d="" class="box-title">Super Jackpot</div>
+                            </div>
+                        </div>
+                        <div data-v-1864c20d="" class="box"><img data-v-1864c20d=""
+                                src="/assets/png/Banner_20240131164605jo9h.jpg" class="act_4">
+                            <div data-v-1864c20d="" class="box-content">
+                                <div data-v-1864c20d="" class="box-title">Youtube Creative Video</div>
+                            </div>
+                        </div>
+                    </div><!---->
+                    <div class="van-list__finished-text">No more</div><!---->
+                    <div class="van-list__placeholder"></div>
+                </div><!----><!---->
+            </div><br data-v-597cae54="" style="--1b8f4054: 'Roboto', 'Inter', sans-serif;"><br data-v-597cae54=""
+                style="--1b8f4054: 'Roboto', 'Inter', sans-serif;"><br data-v-597cae54=""
+                style="--1b8f4054: 'Roboto', 'Inter', sans-serif;"><br data-v-597cae54=""
+                style="--1b8f4054: 'Roboto', 'Inter', sans-serif;">
+           
+            
+                <%- include('../nav') -%>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/js/client.js"></script>
+    <script>
+        function alertMess(text, sic) {
+            $('body').append(
+                `
+                    <div data-v-1dcba851="" class="msg">
+                        <div data-v-1dcba851="" class="msg-content v-enter-active v-enter-to" style=""> ${text} </div>
+                    </div>
+                    `
+            );
+            setTimeout(() => {
+                $('.msg .msg-content').removeClass('v-enter-active v-enter-to');
+                $('.msg .msg-content').addClass('v-leave-active v-leave-to');
+                setTimeout(() => {
+                    $('.msg').remove();
+                }, 100);
+                sic.removeClass('block-click');
+            }, 1000);
+        }
+        $('.list .item').click(function (e) {
+            e.preventDefault();
+            $(this).addClass('block-click');
+            let data = $(this).attr('data-dpr');
+            let wd = $(this);
+            $.ajax({
+                type: "POST",
+                url: "/api/webapi/checkIn",
+                data: {
+                    data: data,
+                },
+                dataType: "json",
+                success: function (response) {
+                    alertMess(response.message, wd);
+                    if (response.status === false) return;
+                    wd.removeClass('action');
+                    wd.find('.txt').text('Received');
+                }
+            });
+        });
+        $.ajax({
+            type: "POST",
+            url: "/api/webapi/checkIn",
+            data: {
+
+            },
+            dataType: "json",
+            success: function (response) {
+                let data = response.datas[0];
+                if (data.total1 == 0) {
+                    $('.list .item:eq(0)').removeClass('action');
+                    $('.list .item:eq(0)').addClass('block-click');
+                    $('.list .item:eq(0) .txt').text('Received');
+                }
+                if (data.total2 == 0) {
+                    $('.list .item:eq(1)').removeClass('action');
+                    $('.list .item:eq(1)').addClass('block-click');
+                    $('.list .item:eq(1) .txt').text('Received');
+                }
+                if (data.total3 == 0) {
+                    $('.list .item:eq(2)').removeClass('action');
+                    $('.list .item:eq(2)').addClass('block-click');
+                    $('.list .item:eq(2) .txt').text('Received');
+                }
+                if (data.total4 == 0) {
+                    $('.list .item:eq(3)').removeClass('action');
+                    $('.list .item:eq(3)').addClass('block-click');
+                    $('.list .item:eq(3) .txt').text('Received');
+                }
+                if (data.total5 == 0) {
+                    $('.list .item:eq(4)').removeClass('action');
+                    $('.list .item:eq(4)').addClass('block-click');
+                    $('.list .item:eq(4) .txt').text('Received');
+                }
+                if (data.total6 == 0) {
+                    $('.list .item:eq(5)').removeClass('action');
+                    $('.list .item:eq(5)').addClass('block-click');
+                    $('.list .item:eq(5) .txt').text('Received');
+                }
+                if (data.total7 == 0) {
+                    $('.list .item:eq(6)').removeClass('action');
+                    $('.list .item:eq(6)').addClass('block-click');
+                    $('.list .item:eq(6) .txt').text('Received');
+                }
+                if (data.total8 == 0) {
+                    $('.list .item:eq(7)').removeClass('action');
+                    $('.list .item:eq(7)').addClass('block-click');
+                    $('.list .item:eq(7) .txt').text('Received');
+                }
+                if (data.total9 == 0) {
+                    $('.list .item:eq(8)').removeClass('action');
+                    $('.list .item:eq(8)').addClass('block-click');
+                    $('.list .item:eq(8) .txt').text('Received');
+                }
+
+            }
+        });
+
+         // Get the draggable element
+    var draggableElement = document.getElementById('customerId');
+    
+    // Variables to store mouse position
+    var offsetX = 0;
+    var offsetY = 0;
+
+    // Function to handle touch start event
+    function handleTouchStart(e) {
+        offsetX = e.touches[0].clientX - draggableElement.getBoundingClientRect().left;
+        offsetY = e.touches[0].clientY - draggableElement.getBoundingClientRect().top;
+    }
+
+    // Function to handle touch move event
+    function handleTouchMove(e) {
+        e.preventDefault();
+        var x = e.touches[0].clientX - offsetX;
+        var y = e.touches[0].clientY - offsetY;
+        
+        // Update the position of the draggable element
+        draggableElement.style.left = x + 'px';
+        draggableElement.style.top = y + 'px';
+    }
+
+    // Add event listeners for touch events
+    draggableElement.addEventListener('touchstart', handleTouchStart, false);
+    draggableElement.addEventListener('touchmove', handleTouchMove, false);
+    </script>
+    <script>
+        $(window).on('load', function () {
+            $('.Loading').fadeOut(0);
+        });
+    </script>
+    <script>
+        // Display the loading animation
+        document.querySelector('.ar-loading-view').style.display = 'block';
+
+        // Simulate loading delay (you can replace this with your actual loading process)
+        setTimeout(function () {
+            // Hide the loading animation after 3 seconds (you can adjust this delay)
+            document.querySelector('.ar-loading-view').style.display = 'none';
+
+            // Show the page content
+            document.getElementById('pageContent').style.display = 'block';
+        }, 1200); // Adjust the delay time as needed (in milliseconds)
+    </script>
+        <script>
+            $(document).ready(function () {
+                // Select the overlay element
+                $('.van-overlay').fadeIn(10);
+            });
+            $(window).on('load', function () {
+                // Select the overlay element
+                $('.van-overlay').fadeIn(10);
+                setTimeout(function () {
+                    $('.van-overlay').fadeOut(300);
+                }, 600);
+            });
+
+        </script>
+</body>
+
+</html>

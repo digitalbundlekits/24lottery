@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html translate="no" data-dpr="1" style="font-size: 43px;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="csrf-token" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex,nofollow">
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+    <title>lottery</title>
+   
+    <link href="/css/wallet/new.css" rel="stylesheet" />
+    <link href="/css/wallet/main.css" rel="stylesheet" />
+    <link href="/css/wallet/chunk_2-1.css" rel="stylesheet" />
+    <link href="/css/wallet/chunk_2-2.css" rel="stylesheet" />
+    <link href="/css/wallet/chunk_2-3.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="/images/bitbug_favicon.ico" type="image/x-icon">
+
+    <style>
+        .mian[data-v-7b283485] {
+
+            background-color: linear-gradient(90deg, rgb(255, 152, 1) 0%, rgb(230, 116, 1) 100%)
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            background-color: #9195a3;
+            padding: 0;
+            margin: 0;
+        }
+        .customer {
+      position: fixed;
+      bottom: 2.4rem;
+      right: .4rem;
+      width: 1.49333rem;
+      height: 1.49333rem;
+      border-radius: 50%;
+      z-index: 100
+    }
+
+    .customer img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%
+    }
+    </style>
+</head>
+
+<body style="font-size: 12px;" class="">
+    <div class="customer" id="customerId" draggable="true" onclick="location.href='/keFuMenu'" style="--76181987: 'Roboto', 'Inter', sans-serif; --17a7a9f6: bahnschrift;">
+        <img class="" data-origin="/assets/png/icon_sevice-9f0c8455.png" src="/assets/png/icon_sevice-9f0c8455.png">
+    </div>
+    <div id="app" data-v-app="">
+        <div data-v-7b283485="" class="mian">
+            <!-- <div data-v-106b99c8="" data-v-7b283485="" class="navbar">
+                <div data-v-106b99c8="" class="navbar-left"></div>
+                <div data-v-106b99c8="" class="navbar-title"> Wallet </div>
+                <div data-v-106b99c8="" class="navbar-right" onclick="location.href='/keFuMenu'">
+                    <div data-v-7b283485="" data-v-106b99c8="" class="c-row">
+                        <img data-v-7b283485="" data-v-106b99c8="" src="/images/audio.webp" class="audio">
+                    </div>
+                </div>
+            </div> -->
+            <div data-v-be467d1a="" class="wallet-container" style="--f817f0ee: 'Roboto', 'Inter', sans-serif;">
+                <div data-v-be467d1a="" class="wallet-container-header">
+
+                    <div data-v-81ead1cb="" class="navbar-fixed wc"
+                        style="background: linear-gradient(90deg, rgb(255, 152, 1) 0%, rgb(230, 116, 1) 100%);">
+                        <div data-v-81ead1cb="" class="navbar__content">
+                            <div data-v-81ead1cb="" class="navbar__content-left"><i data-v-81ead1cb=""
+                                    class="van-badge__wrapper van-icon van-icon-arrow-left"><!----><!----><!----></i>
+                            </div>
+                            <div data-v-81ead1cb="" class="navbar__content-center"><!---->
+                                <div data-v-81ead1cb="" class="navbar__content-title">Wallet</div>
+                            </div>
+                            <div data-v-81ead1cb="" class="navbar__content-right">
+                                <!-- <div data-v-7b283485="" data-v-106b99c8="" class="c-row">
+                                    <img data-v-7b283485="" data-v-106b99c8="" src="/images/audio.webp" class="audio">
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div data-v-be467d1a="" class="wallet-container-header-belly"><img data-v-be467d1a=""
+                            src="/assets/png/wallets-dad944e7.png" alt="">
+
+                        <div data-v-be467d1a="" class="money">
+                            <!---->
+                            <div data-v-7b283485="">0.00<span data-v-7b283485="" class="p-l-10">₹</span></div>
+                        </div>
+                        <span data-v-be467d1a="" style="color: white;">Total balance</span><!---->
+                        <div data-v-a74bd992="">
+                            <div data-v-a74bd992="">
+                                <p data-v-a74bd992="" class="total">0</p>
+                                <p data-v-a74bd992="">Total amount</p>
+                            </div>
+                            <div data-v-a74bd992="">
+                                <p data-v-a74bd992="" class="total">0</p>
+                                <p data-v-a74bd992="">Total deposit amount</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div data-v-be467d1a="" class="wallet-container-content">
+                    <div data-v-be467d1a="" class="container">
+                        <div data-v-be467d1a="" class="progressBars">
+                            <div data-v-be467d1a="" class="progressBarsL">
+                                <div data-v-be467d1a="" class="van-circle"><svg viewBox="0 0 1100 1100">
+                                        <defs>
+                                            <linearGradient id="van-circle-2" x1="100%" y1="0%" x2="0%" y2="0%">
+                                                <stop offset="0%" stop-color="#3C9CF6"></stop>
+                                                <stop offset="100%" stop-color="#4DD8EF"></stop>
+                                            </linearGradient>
+                                        </defs>
+                                        <path class="van-circle__layer"
+                                            d="M 550 550 m 0, -500 a 500, 500 0 1, 1 0, 1000 a 500, 500 0 1, 1 0, -1000"
+                                            style="fill: none; stroke: rgb(255, 153, 1); stroke-width: 100px;"></path>
+                                        <path
+                                            d="M 550 550 m 0, -500 a 500, 500 0 1, 1 0, 1000 a 500, 500 0 1, 1 0, -1000"
+                                            class="van-circle__hover" stroke="url(#van-circle-2)"
+                                            style="stroke: url(&quot;#van-circle-2&quot;); stroke-width: 101px; stroke-linecap: butt; stroke-dasharray: 0px, 3140px;">
+                                        </path>
+                                    </svg>
+                                    <div class="van-circle__text">100%</div>
+                                </div>
+                                <h3 data-v-be467d1a="">
+                                    <div data-v-be467d1a="" class="money">
+                                        <!---->
+                                        <div data-v-7b283485="" >0.00<span data-v-7b283485="" class="p-l-10">₹</span>
+                                        </div>
+                                    </div>
+                                </h3><span data-v-be467d1a="">Main wallet</span>
+                            </div>
+                            <div data-v-be467d1a="" class="progressBarsR">
+                                <div data-v-be467d1a="" class="van-circle"><svg viewBox="0 0 1100 1100">
+                                        <defs>
+                                            <linearGradient id="van-circle-3" x1="100%" y1="0%" x2="0%" y2="0%">
+                                                <stop offset="0%" stop-color="#3C9CF6"></stop>
+                                                <stop offset="100%" stop-color="#4DD8EF"></stop>
+                                            </linearGradient>
+                                        </defs>
+                                        <path class="van-circle__layer"
+                                            d="M 550 550 m 0, -500 a 500, 500 0 1, 1 0, 1000 a 500, 500 0 1, 1 0, -1000"
+                                            style="fill: none; stroke: rgb(216, 216, 216); stroke-width: 100px;"></path>
+                                        <path
+                                            d="M 550 550 m 0, -500 a 500, 500 0 1, 1 0, 1000 a 500, 500 0 1, 1 0, -1000"
+                                            class="van-circle__hover" stroke="url(#van-circle-3)"
+                                            style="stroke: url(&quot;#van-circle-3&quot;); stroke-width: 101px; stroke-linecap: butt; stroke-dasharray: 0px, 3140px;">
+                                        </path>
+                                    </svg>
+                                    <div class="van-circle__text">0%</div>
+                                </div>
+                                <h3 data-v-be467d1a="">₹0.00</h3><span data-v-be467d1a="">3rd party wallet</span>
+                            </div>
+                        </div>
+                        <div data-v-be467d1a="" class="recycleBtnD" onclick="location.href='/wallet/'"><button
+                                data-v-be467d1a="" class="recycleBtn">Main
+                                wallet transfer</button></div>
+                        <div data-v-be467d1a="" class="userDetail">
+                            <div data-v-be467d1a="">
+                                <div data-v-be467d1a="" class="imgD" onclick="location.href='/wallet/recharge'"><img
+                                        data-v-be467d1a="" src="assets/png/rechargeIcon226.png"></div><span
+                                    data-v-be467d1a="">Deposit</span>
+                            </div>
+                            <div data-v-be467d1a="">
+                                <div data-v-be467d1a="" class="imgD" onclick="location.href='/wallet/withdrawal'"><img
+                                        data-v-be467d1a="" src="/assets/png/withdrawl.png"></div><span
+                                    data-v-be467d1a="">Withdraw</span>
+                            </div>
+                            <div data-v-be467d1a="">
+                                <div data-v-be467d1a="" class="imgD" onclick="location.href='/wallet/rechargerecord'">
+                                    <img data-v-be467d1a="" src="/assets/png/rechargeHistory-db148953.png">
+                                </div><span data-v-be467d1a="">Deposit history</span>
+                            </div>
+                            <div data-v-be467d1a="">
+                                <div data-v-be467d1a="" class="imgD" onclick="location.href='/wallet/withdrawalrecord'">
+                                    <img data-v-be467d1a="" src="/assets/png/myWithdrawHistory-8ddd0e20.png">
+                                </div><span data-v-be467d1a="">Withdrawal history</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-v-be467d1a="" class="gameList">
+                        <div data-v-be467d1a="" class="box"
+                            style="background-image: url(&quot;/assets/png/Lottery-873aeb91.png&quot;);">
+                            <h3 data-v-be467d1a="" class="f1">₹ 0.00</h3><span data-v-be467d1a="">Lottery</span>
+                        </div>
+                        <div data-v-be467d1a="" class="box"
+                            style="background-image: url(&quot;/assets/png/TB-0d009f6f.png&quot;);">
+                            <h3 data-v-be467d1a="" class="">₹ 0.00</h3><span data-v-be467d1a="">TB_Chess</span>
+                        </div>
+                        <div data-v-be467d1a="" class="box"
+                            style="background-image: url(&quot;/assets/png/Wickets9-f0e72301.png&quot;);">
+                            <h3 data-v-be467d1a="" class=""> 0.00</h3><span data-v-be467d1a="">Wickets9</span>
+                        </div>
+                        <div data-v-be467d1a="" class="box"
+                            style="background-image: url(&quot;/assets/png/JILI-e25514b0.png&quot;);">
+                            <h3 data-v-be467d1a="" class="">₹ 0.00</h3><span data-v-be467d1a="">JILI</span>
+                        </div>
+                        <div data-v-be467d1a="" class="box"
+                            style="background-image: url(&quot;/assets/png/PG-ce27686f.png&quot;);">
+                            <h3 data-v-be467d1a="" class="">₹ 0.00</h3><span data-v-be467d1a="">PG</span>
+                        </div>
+                        <div data-v-be467d1a="" class="box"
+                            style="background-image: url(&quot;/assets/png/DG-71b50cfe.png&quot;);">
+                            <h3 data-v-be467d1a="" class="">₹ 0.00</h3><span data-v-be467d1a="">DG</span>
+                        </div>
+                        <div data-v-be467d1a="" class="box"
+                            style="background-image: url(&quot;/assets/png/SaBa-08da6600.png&quot;);">
+                            <h3 data-v-be467d1a="" class="">₹ 0.00</h3><span data-v-be467d1a="">SaBa</span>
+                        </div>
+                        <div data-v-be467d1a="" class="box"
+                            style="background-image: url(&quot;/assets/png/MG-131a99c7.png&quot;);">
+                            <h3 data-v-be467d1a="" class="">₹ 0.00</h3><span data-v-be467d1a="">MG</span>
+                        </div>
+                        <div data-v-be467d1a="" class="box"
+                            style="background-image: url(&quot;/assets/png/JDB-f47a0805.png&quot;);">
+                            <h3 data-v-be467d1a="" class="">₹ 0.00</h3><span data-v-be467d1a="">JDB</span>
+                        </div>
+                        <div data-v-be467d1a="" class="box"
+                            style="background-image: url(&quot;/assets/png/CQ9-99edddef.png&quot;);">
+                            <h3 data-v-be467d1a="" class="">₹ 0.00</h3><span data-v-be467d1a="">CQ9</span>
+                        </div>
+                        <div data-v-be467d1a="" class="box"
+                            style="background-image: url(&quot;/assets/png/TB-0d009f6f.png&quot;);">
+                            <h3 data-v-be467d1a="" class="">₹ 0.00</h3><span data-v-be467d1a="">TB</span>
+                        </div>
+                        <div data-v-be467d1a="" class="box"
+                            style="background-image: url(&quot;/assets/png/EVOPlay-123b1bd7.png&quot;);">
+                            <h3 data-v-be467d1a="" class="">₹ 0.00</h3><span data-v-be467d1a="">EVO_Video</span>
+                        </div>
+                        <div data-v-be467d1a="" class="box"
+                            style="background-image: url(&quot;/assets/png/AG-3749f7b9.png&quot;);">
+                            <h3 data-v-be467d1a="" class="">₹ 0.00</h3><span data-v-be467d1a="">AG_Video</span>
+                        </div>
+                        <div data-v-be467d1a="" class="box"
+                            style="background-image: url(&quot;/assets/png/Card365-1481917e.png&quot;);">
+                            <h3 data-v-be467d1a="" class="">₹ 0.00</h3><span data-v-be467d1a="">Card365</span>
+                        </div>
+                        <div data-v-be467d1a="" class="box"
+                            style="background-image: url(&quot;/assets/png/V8Card-bcc97655.png&quot;);">
+                            <h3 data-v-be467d1a="" class="">₹ 0.00</h3><span data-v-be467d1a="">V8Card</span>
+                        </div>
+                        <div data-v-be467d1a="" class="box"
+                            style="background-image: url(&quot;/assets/png/SEXY_Video-604a76ed.png&quot;);">
+                            <h3 data-v-be467d1a="" class="">₹ 0.00</h3><span data-v-be467d1a="">SEXY_Video</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="van-overlay" style="z-index: 2003; display: none;">
+                <div data-v-7692a079="" data-v-42f27458="" class="Loading c-row c-row-middle-center"
+                    style="position: fixed;height: 100vh;width: 100vw;top: 0;left: 0;background: rgba(0,0,0,.6);z-index: 99999;">
+                    <div data-v-7692a079="" class="van-loading van-loading--circular">
+                        <span data-v-7692a079="" class="van-loading__spinner van-loading__spinner--circular"
+                            style="width: auto; height: auto; -webkit-animation-duration: 1s; animation-duration: 1s;">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="0 0 200 200" width="200" height="200" preserveAspectRatio="xMidYMid meet"
+                                style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;">
+                                <defs>
+                                    <clipPath id="__lottie_element_2">
+                                        <rect width="200" height="200" x="0" y="0"></rect>
+                                    </clipPath>
+                                    <image
+                                        xlink:href="data:image/png;base64,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">
+                                    </image>
+                                    <image
+                                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADIBAMAAABfdrOtAAAAJHpUWHRDcmVhdG9yAAAImXNMyU9KVXBMK0ktUnBNS0tNLikGAEF6Bs5qehXFAAAACXBIWXMAAAABAAAAAQBPJcTWAAAAHlBMVEVHcEy/GyDCGiHCGiDBGiHBGiLBGiG/GyC/HCDBGiEYgX5lAAAACXRSTlMAFupex4emMEAHMN8rAAAEw0lEQVR42u1cy1ITQRTtYTKZsAsQLLODUsDeoVWC2YGSSHYC8ZEdolU6Owopq9gpisJOhwS5f2vPDENek2QefW5ZyF0BReZM9z3nPjrdLURimxJwM+p0Dw5SIqJl9ECaCmQO93z7pLFBvv1BjeDkPV3bJQbicZ267DcC4ySAcGsvT3+W1Q+7+iHMPR+huhr8RtQqasf4IRVEa+f6wbM17Qw2tr1RvCsiZVFwFMbCPlR6pvK4+xorb1O542IZj7FQxGIUFAY64Np1PIYXbuGJ4xEDhspNbbDPPWK10BiGQy46x4pjoi00hsXgdFX1XKAdIg7wRY/HrCV4+VbBs1fkIYVCnzl0LvADwctQ0Rfv9RK5+wweWWfwCJ6+aiDzcAyLwyMVBmrZHAOZZhC7EuIyA38vBIPb8UK0pYsXYonB7aJJL+AYBWoJBpEsccwWXiQ2x2zlMCsm/UrEc8uQLn4gFmgRq8fKtIYHcQgftwyOKJ/nIHCZgcDCcW+ISywOl0wzNFcqcOGLOlFnCPM2RwmRR35ZEdoEhxRZ/O4wJCyDw+8mh97zHFmRhVxHHORqMpBL1BmSieBgcIGDwRZHeMxzpEUWmZTpCx7kjKEM5tGi0+IQfJsBRDIIXnA0cjZsX0UPyC+O+MgAYnJk+JsDYnFEeosj0t+CxLXDIh7EkGt4kCCg3IL8SyCmX5+CY5flP/4mgUCL+pwf5ME5Pufzysb2QBPBNybYumsy6BmwLWM56N+xtfAZBVU9tMO+akya0NbhqjGpEENjcgTtGa9oNYn87i/sGXLI6s68iicWMkKGC3bQtZVwJQK6zlkOHY6UfCVciUCuFlwvElSA6x6y3T9vCJlcXtMMJpTOgh1whbsjdOB3NF2ewK3ZNjucwtFLXkQNSje5zruiGKi+636wiaqKprs7BgnyfI+zmyDPy1YPnSGNUKFHgHnM9sdcD6EKGM2f9U5QHZJS+vYrVBByNKjdl+/nEFKc7yuPzuEu8ZyiXykDzzzTrxST2gOU1p4dJwbEZ+vfuRKxiU/7vj5DtiKi8rxuAl/GcFPmMB9RaNX1NlxG5HZazfOVj5S3pXe+KtFlqdbN1caQzcda5ys3JBiaOnenDt187Oir7s2hZyY07q8+GLr52Ja6tn0YcjiJtB11KI2Qg6Xr9MlI72o6RzP6qExOD4ubIxVn1HWw2BxzwqSkI0GO449i8W72gYwLggfZh1IZq2k1lPWs1BofzQ+yaiXOAb+sh+finYtT/5Uh2dvx3lENJUMwPqbWfkzPvc1A3/W4HIz3NhGz4MRWQEGmPVt8nOAw72HKCbOIHiQJo2kOmipmJdGYKdMclG4mPPl8J8WRb+WQ58k+8YhoM9kn1Hu1k5MxmfNnZQrie7dIbCXyYhquqFdztxJgpGO9muS4KDMysQs78ZjoQ8xBp8UQ4rtCeTZeLyuU6Y6Dz+rji2M4498tsykymDcRo291+eTd9PMxW1kw4z1jcSg5Cw2iBCQcGvW82aBqZEa2V7ybfrTcLeM/iapPBiaq4V+JpOmmH3M7uGCp+uZr+Ke7314Fty4tPtTWZs7shddE3d9Q9jT8bXFV60rJTIMGrKYXwtfDSUN2ANzazr7AmDF16ttUUfyf9hdhzrd5F3WCHQAAAABJRU5ErkJggg==">
+                                    </image>
+                                </defs>
+                                <g clip-path="url(#__lottie_element_2)">
+                                    <g class="ai"
+                                        transform="matrix(0.9999210238456726,0.012566040270030499,-0.012566040270030499,0.9999210238456726,1.264495849609375,-1.2487106323242188)"
+                                        opacity="1" style="display: block;">
+                                        <image width="200px" height="200px" preserveAspectRatio="xMidYMid slice"
+                                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADIBAMAAABfdrOtAAAAJHpUWHRDcmVhdG9yAAAImXNMyU9KVXBMK0ktUnBNS0tNLikGAEF6Bs5qehXFAAAACXBIWXMAAAABAAAAAQBPJcTWAAAAHlBMVEVHcEy/GyDCGiHCGiDBGiHBGiLBGiG/GyC/HCDBGiEYgX5lAAAACXRSTlMAFupex4emMEAHMN8rAAAEw0lEQVR42u1cy1ITQRTtYTKZsAsQLLODUsDeoVWC2YGSSHYC8ZEdolU6Owopq9gpisJOhwS5f2vPDENek2QefW5ZyF0BReZM9z3nPjrdLURimxJwM+p0Dw5SIqJl9ECaCmQO93z7pLFBvv1BjeDkPV3bJQbicZ267DcC4ySAcGsvT3+W1Q+7+iHMPR+huhr8RtQqasf4IRVEa+f6wbM17Qw2tr1RvCsiZVFwFMbCPlR6pvK4+xorb1O542IZj7FQxGIUFAY64Np1PIYXbuGJ4xEDhspNbbDPPWK10BiGQy46x4pjoi00hsXgdFX1XKAdIg7wRY/HrCV4+VbBs1fkIYVCnzl0LvADwctQ0Rfv9RK5+wweWWfwCJ6+aiDzcAyLwyMVBmrZHAOZZhC7EuIyA38vBIPb8UK0pYsXYonB7aJJL+AYBWoJBpEsccwWXiQ2x2zlMCsm/UrEc8uQLn4gFmgRq8fKtIYHcQgftwyOKJ/nIHCZgcDCcW+ISywOl0wzNFcqcOGLOlFnCPM2RwmRR35ZEdoEhxRZ/O4wJCyDw+8mh97zHFmRhVxHHORqMpBL1BmSieBgcIGDwRZHeMxzpEUWmZTpCx7kjKEM5tGi0+IQfJsBRDIIXnA0cjZsX0UPyC+O+MgAYnJk+JsDYnFEeosj0t+CxLXDIh7EkGt4kCCg3IL8SyCmX5+CY5flP/4mgUCL+pwf5ME5Pufzysb2QBPBNybYumsy6BmwLWM56N+xtfAZBVU9tMO+akya0NbhqjGpEENjcgTtGa9oNYn87i/sGXLI6s68iicWMkKGC3bQtZVwJQK6zlkOHY6UfCVciUCuFlwvElSA6x6y3T9vCJlcXtMMJpTOgh1whbsjdOB3NF2ewK3ZNjucwtFLXkQNSje5zruiGKi+636wiaqKprs7BgnyfI+zmyDPy1YPnSGNUKFHgHnM9sdcD6EKGM2f9U5QHZJS+vYrVBByNKjdl+/nEFKc7yuPzuEu8ZyiXykDzzzTrxST2gOU1p4dJwbEZ+vfuRKxiU/7vj5DtiKi8rxuAl/GcFPmMB9RaNX1NlxG5HZazfOVj5S3pXe+KtFlqdbN1caQzcda5ys3JBiaOnenDt187Oir7s2hZyY07q8+GLr52Ja6tn0YcjiJtB11KI2Qg6Xr9MlI72o6RzP6qExOD4ubIxVn1HWw2BxzwqSkI0GO449i8W72gYwLggfZh1IZq2k1lPWs1BofzQ+yaiXOAb+sh+finYtT/5Uh2dvx3lENJUMwPqbWfkzPvc1A3/W4HIz3NhGz4MRWQEGmPVt8nOAw72HKCbOIHiQJo2kOmipmJdGYKdMclG4mPPl8J8WRb+WQ58k+8YhoM9kn1Hu1k5MxmfNnZQrie7dIbCXyYhquqFdztxJgpGO9muS4KDMysQs78ZjoQ8xBp8UQ4rtCeTZeLyuU6Y6Dz+rji2M4498tsykymDcRo291+eTd9PMxW1kw4z1jcSg5Cw2iBCQcGvW82aBqZEa2V7ybfrTcLeM/iapPBiaq4V+JpOmmH3M7uGCp+uZr+Ke7314Fty4tPtTWZs7shddE3d9Q9jT8bXFV60rJTIMGrKYXwtfDSUN2ANzazr7AmDF16ttUUfyf9hdhzrd5F3WCHQAAAABJRU5ErkJggg==">
+                                        </image>
+                                    </g>
+                                    <g class="png"
+                                        transform="matrix(0.8008000254631042,0,0,0.8008000254631042,59.959999084472656,59.959999084472656)"
+                                        opacity="1" style="display: block;">
+                                        <image width="100px" height="100px" preserveAspectRatio="xMidYMid slice"
+                                            xlink:href="data:image/png;base64,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">
+                                        </image>
+                                    </g>
+                                </g>
+                            </svg>
+                        </span>
+                        <div data-v-1690b988="" class="skeleton-wrapper" style="display: none;">
+                            <div data-v-1690b988="" class="van-skeleton van-skeleton--animate"><!---->
+                                <div class="van-skeleton__content"><!---->
+                                    <div class="van-skeleton-paragraph" style="width: 100%;"></div>
+                                    <div class="van-skeleton-paragraph" style="width: 100%;"></div>
+                                    <div class="van-skeleton-paragraph" style="width: 100%;"></div>
+                                    <div class="van-skeleton-paragraph" style="width: 100%;"></div>
+                                    <div class="van-skeleton-paragraph" style="width: 100%;"></div>
+                                    <div class="van-skeleton-paragraph" style="width: 100%;"></div>
+                                    <div class="van-skeleton-paragraph" style="width: 100%;"></div>
+                                    <div class="van-skeleton-paragraph" style="width: 100%;"></div>
+                                    <div class="van-skeleton-paragraph" style="width: 100%;"></div>
+                                    <div class="van-skeleton-paragraph" style="width: 60%;"></div>
+                                </div>
+                            </div>
+                            <div data-v-1690b988="" class="van-skeleton van-skeleton--animate">
+                                <div class="van-skeleton-avatar van-skeleton-avatar--round"></div>
+                                <div class="van-skeleton__content">
+                                    <h3 class="van-skeleton-title"></h3>
+                                    <div class="van-skeleton-paragraph" style="width: 100%;"></div>
+                                    <div class="van-skeleton-paragraph" style="width: 100%;"></div>
+                                    <div class="van-skeleton-paragraph" style="width: 100%;"></div>
+                                    <div class="van-skeleton-paragraph" style="width: 100%;"></div>
+                                    <div class="van-skeleton-paragraph" style="width: 60%;"></div>
+                                </div>
+                            </div>
+                            <div data-v-1690b988="" class="van-skeleton van-skeleton--animate"><!---->
+                                <div class="van-skeleton__content">
+                                    <h3 class="van-skeleton-title"></h3>
+                                    <div class="van-skeleton-paragraph" style="width: 100%;"></div>
+                                    <div class="van-skeleton-paragraph" style="width: 100%;"></div>
+                                    <div class="van-skeleton-paragraph" style="width: 100%;"></div>
+                                    <div class="van-skeleton-paragraph" style="width: 100%;"></div>
+                                    <div class="van-skeleton-paragraph" style="width: 60%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <%- include('../nav') -%>
+        </div>
+       
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/js/client.js"></script>
+    <script>
+
+        $('#reload .van-image').click(function (e) {
+            e.preventDefault();
+            $(this).addClass('action block-click');
+            setTimeout(() => {
+                $(this).removeClass('action block-click');
+            }, 2500);
+            $.ajax({
+                type: "GET",
+                url: "/api/webapi/GetUserInfo",
+                dataType: "json",
+                success: function (response) {
+                    let user = response.data;
+                    $('.wallet-user .name').text(user.name_user);
+                    $('.money').text(user.money_user + "₹");
+                }
+            });
+        });
+        $.ajax({
+            type: "GET",
+            url: "/api/webapi/GetUserInfo",
+            dataType: "json",
+            success: function (response) {
+                let user = response.data;
+                $('.wallet-user .name').text(user.name_user);
+                $('.money').text(user.money_user + ".00 ₹");
+                $('.balance .item:eq(0) div:eq(1)').text(response.totalRecharge + ".00 ₹");
+                $('.balance .item:eq(1) div:eq(1)').text(response.totalWithdraw + ".00 ₹");
+            }
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            // Select the overlay element
+            $('.van-overlay').fadeIn(10);
+        });
+        $(window).on('load', function () {
+            // Select the overlay element
+            $('.van-overlay').fadeIn(10);
+            setTimeout(function () {
+                $('.van-overlay').fadeOut(300);
+            }, 600);
+        });
+
+        // Get the draggable element
+    var draggableElement = document.getElementById('customerId');
+    
+    // Variables to store mouse position
+    var offsetX = 0;
+    var offsetY = 0;
+
+    // Function to handle touch start event
+    function handleTouchStart(e) {
+        offsetX = e.touches[0].clientX - draggableElement.getBoundingClientRect().left;
+        offsetY = e.touches[0].clientY - draggableElement.getBoundingClientRect().top;
+    }
+
+    // Function to handle touch move event
+    function handleTouchMove(e) {
+        e.preventDefault();
+        var x = e.touches[0].clientX - offsetX;
+        var y = e.touches[0].clientY - offsetY;
+        
+        // Update the position of the draggable element
+        draggableElement.style.left = x + 'px';
+        draggableElement.style.top = y + 'px';
+    }
+
+    // Add event listeners for touch events
+    draggableElement.addEventListener('touchstart', handleTouchStart, false);
+    draggableElement.addEventListener('touchmove', handleTouchMove, false);
+    </script>
+</body>
+
+</html>

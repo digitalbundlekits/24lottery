@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html translate="no" data-dpr="1" style="font-size: 43px;" style="min-height: 100vh;">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex,nofollow">
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+    <title>lottery</title>
+
+    <link href="/css/member/main.css" rel="stylesheet" />
+    <link href="/css/member/chunk-1.css" rel="stylesheet" />
+    <link href="/css/member/chunk-2.css" rel="stylesheet" />
+    <link href="/css/member/chunk-3.css" rel="stylesheet" />
+    <link href="/css/member/chunk-4.css" rel="stylesheet" />
+    <link href="/css/member/chunk-5.css" rel="stylesheet" />
+    <link href="/css/member/chunk-6.css" rel="stylesheet" />
+    <link href="/css/member/chunk-7.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="/images/bitbug_favicon.ico" type="image/x-icon">
+    <style>
+        @media screen and (max-width: 500px) {
+            .mian {
+                width: 100%;
+                min-height: 100vh
+            }
+        }
+
+        .userInfo__container-content-wrapper[data-v-5b1caab5] {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: start;
+            -webkit-justify-content: flex-start;
+            justify-content: flex-start;
+        }
+
+        .userInfo__container-content__avatar[data-v-5b1caab5] {
+            width: 1.86667rem;
+            height: 1.86667rem;
+            border-radius: 50%;
+            margin-right: .2rem;
+            overflow: hidden;
+            border-color: #ff6c6a;
+            border-style: solid;
+        }
+
+        .userInfo__container-content__avatar img[data-v-5b1caab5] {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .userInfo__container-content__name[data-v-5b1caab5] {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            flex-direction: column;
+            -webkit-justify-content: space-around;
+            justify-content: space-around;
+        }
+
+        .userInfo__container-content-nickname[data-v-5b1caab5] {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: start;
+            -webkit-justify-content: flex-start;
+            justify-content: flex-start;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            font-size: 17px;
+            color: #fff;
+        }
+
+        .userInfo__container .n0[data-v-5b1caab5] {
+            width: 1.33333rem;
+            height: .58667rem;
+            margin: 0 .13333rem;
+            background-image: url(/assets/png/0-78e1ab02.png);
+            background-size: 1.33333rem .58667rem;
+        }
+
+        .userInfo__container-content-uid[data-v-5b1caab5] {
+            width: 3.06667rem;
+            background: #ffd058;
+            border-radius: .53333rem;
+            padding: .06667rem 0;
+            color: #fff;
+            font-size: .29333rem;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            -webkit-justify-content: space-around;
+            justify-content: space-around;
+        }
+
+        .userInfo__container-content-uid img[data-v-5b1caab5] {
+            width: .32rem;
+        }
+
+        .userInfo__container-content-logintime[data-v-5b1caab5] {
+            font-size: .29333rem;
+            color: #fff;
+        }
+
+        .van-dialog {
+            position: fixed;
+            top: 45%;
+            left: 50%;
+            width: 8.53333rem;
+            overflow: hidden;
+            font-size: .42667rem;
+            -webkit-transform: translate3d(-50%, -50%, 0);
+            transform: translate3d(-50%, -50%, 0);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            width: 8rem;
+            min-height: 6.66667rem;
+            background: #ffffff;
+            -webkit-transition: opacity .3s, -webkit-transform .3s ease-in-out;
+            transition: opacity .3s, -webkit-transform .3s ease-in-out;
+            transition: opacity .3s, transform .3s ease-in-out;
+            transition: opacity .3s, transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+            z-index: 2003;
+            padding: 0.53333rem 0.26667rem;
+            border-radius: 20px !important
+        }
+
+        @media(max-width:321px) {
+            .van-dialog {
+                width: 90%
+            }
+        }
+
+        .van-dialog__header {
+            padding-top: .64rem;
+            font-weight: 500;
+            line-height: .64rem;
+            text-align: center
+        }
+
+        .van-dialog__header--isolated {
+            padding: .64rem 0
+        }
+
+        .van-dialog__message {
+            max-height: 60vh;
+            padding: .64rem;
+            overflow-y: auto;
+            font-size: .48rem;
+            line-height: .53333rem;
+            font-weight: 700;
+            white-space: pre-wrap;
+            text-align: center;
+            word-wrap: break-word;
+            -webkit-overflow-scrolling: touch
+        }
+
+        .van-dialog__message--has-title {
+            padding-top: .32rem;
+            color: #646566
+        }
+
+        .van-dialog__message--left {
+            text-align: left
+        }
+
+        .van-dialog__message--right {
+            text-align: right
+        }
+
+        .van-dialog__footer {
+            overflow: hidden;
+            -webkit-user-select: none;
+            user-select: none;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            gap: 0.28rem;
+            width: 100%;
+            height: 1.06667rem;
+            margin-top: auto;
+            padding: 0 0.26667rem
+        }
+
+        .van-dialog__footer--buttons {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex
+        }
+
+        .van-dialog__footer--buttons .van-button {
+            -webkit-box-flex: 1;
+            -webkit-flex: 1;
+            flex: 1
+        }
+
+        .van-dialog .van-button {
+            border: 0
+        }
+
+        .van-dialog__confirm,
+        .van-dialog__confirm:active {
+            color: #1989fa
+        }
+
+        .van-dialog-bounce-enter {
+            -webkit-transform: translate3d(-50%, -50%, 0) scale(.7);
+            transform: translate3d(-50%, -50%, 0) scale(.7);
+            opacity: 0
+        }
+
+        .van-dialog-bounce-leave-active {
+            -webkit-transform: translate3d(-50%, -50%, 0) scale(.9);
+            transform: translate3d(-50%, -50%, 0) scale(.9);
+            opacity: 0
+        }
+
+        .mian .logout-btn .gradient[data-v-8cd483ca] {
+            width: 88%;
+            box-shadow: none;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            background-color: #9195a3;
+            padding: 0;
+            margin: 0;
+        }
+
+        .mian .menu-box .info[data-v-8cd483ca] {
+            width: 100%;
+            height: 5.6rem;
+            margin-top: -1rem;
+            padding-bottom: 2.90667rem;
+            background: -webkit-linear-gradient(left, #ff9901 0%, #e57201 97%, #f2403a 100%);
+            background: linear-gradient(90deg, #ff9901 0%, #e57201 97%, #f2403a 100%);
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-align: end;
+            -webkit-align-items: center;
+            align-items: center;
+            border-radius: 0 0 .8rem .8rem;
+        }
+
+        .block-click {
+            pointer-events: none;
+        }
+
+        .mian[data-v-7b283485] {
+
+            background-color: linear-gradient(90deg, rgb(255, 152, 1) 0%, rgb(230, 116, 1) 100%)
+        }
+
+        .totalSavings__container-content[data-v-604c2603] {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            width: 100%;
+            padding: .4rem .26667rem
+        }
+
+        .totalSavings__container-content-item[data-v-604c2603] {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center
+        }
+
+        .totalSavings__container-content-item div[data-v-604c2603] {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            align-items: center
+        }
+
+        .totalSavings__container-content-item div img[data-v-604c2603] {
+            width: .8rem
+        }
+
+        .totalSavings__container-content-item div span[data-v-604c2603] {
+            margin: .13333rem 0;
+            font-size: .37333rem;
+            text-align: center;
+            color: black;
+        }
+
+        .financialServices__container-footer>div[data-v-4ac977f5] {
+            color: black;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            margin-top: 50px;
+            width: 100%;
+            padding: .34667rem 0 .34667rem .21333rem;
+            border-radius: .26667rem;
+            background: -webkit-linear-gradient(left, #374992 .14%, #4675D2 99.92%);
+            background: #fff;
+            box-shadow: 0 0.05333rem 0.21333rem 0.02667rem #d0d0ed5c;
+        }
+
+        .financialServices__container-footer>div img[data-v-4ac977f5] {
+            width: 1.09333rem;
+            margin-right: .24rem;
+        }
+
+        .financialServices__container-footer>div>div[data-v-4ac977f5] {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            justify-content: space-between;
+            gap: .13333rem;
+            width: 100%;
+            padding: .13333rem 0;
+        }
+
+        .financialServices__container-footer>div>div>div[data-v-4ac977f5] {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            justify-content: space-between;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            padding: 0 .13333rem 0 0;
+        }
+
+        .financialServices__container-footer>div>div>div span[data-v-4ac977f5]:first-of-type {
+            font-weight: 700;
+        }
+
+        .financialServices__container-footer-des[data-v-4ac977f5] {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: end;
+            -webkit-justify-content: flex-end;
+            justify-content: flex-end;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .financialServices__container-footer>div>div>div h4[data-v-4ac977f5] {
+            font-size: .37333rem;
+            color: #fff;
+            border-radius: 9rem;
+            background: #759FDE;
+            padding: 0 .13333rem;
+        }
+
+        .financialServices__container-footer-des[data-v-4ac977f5] .van-icon {
+            font-size: .42667rem;
+        }
+
+        .van-icon {
+            position: relative;
+            display: inline-block;
+            font: .18667rem / 1 vant-icon;
+            font: normal normal normal .18667rem / 1 var(--van-icon-font-family, "vant-icon");
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .van-badge__wrapper {
+            position: relative;
+            display: inline-block;
+        }
+
+        .financialServices__container-footer>div>div>span[data-v-4ac977f5] {
+            font-size: .37333rem;
+        }
+
+        .settingPanel__container[data-v-0341cbde] {
+            padding: 0 .26667rem .13333rem;
+            border-radius: .26667rem
+        }
+
+        .settingPanel__container.panel-default[data-v-0341cbde] {
+            background: #2B3270
+        }
+
+        .settingPanel__container h1[data-v-0341cbde] {
+            margin-bottom: .26667rem;
+            color: #151515;
+            font-size: .4rem
+        }
+
+        .settingPanel__container-items[data-v-0341cbde] {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            flex-direction: column;
+            color: #666
+        }
+
+        .settingPanel__container-items__item[data-v-0341cbde] {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            justify-content: space-between;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            font-size: .37333rem;
+            padding: .33333rem 0
+        }
+
+        .settingPanel__container-items__item[data-v-0341cbde]:last-child:after {
+            display: none
+        }
+
+        .settingPanel__container-items__item img[data-v-0341cbde] {
+            width: .66667rem;
+            height: auto;
+            margin: 0 .24rem 0 0
+        }
+
+        .settingPanel__container-items__title[data-v-0341cbde] {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: start;
+            -webkit-justify-content: flex-start;
+            justify-content: flex-start;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            align-items: center
+        }
+
+        .settingPanel__container-items-right[data-v-0341cbde] {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: end;
+            -webkit-justify-content: flex-end;
+            justify-content: flex-end;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            align-items: center
+        }
+
+        .settingPanel__container-items-right span[data-v-0341cbde] {
+            font-size: .37333rem;
+            padding-right: .4rem;
+            color: #050505
+        }
+
+        .settingPanel__container-items-right h5[data-v-0341cbde] {
+            font-size: .32rem;
+            color: #fff;
+            border-radius: .42667rem;
+            margin-right: .4rem;
+            background: #fa5b5b;
+            height: .42667rem;
+            padding: 0 .13333rem;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center
+        }
+
+        .financialServices__container[data-v-890cd9fe] {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            flex-direction: column;
+        }
+
+        .financialServices__container-footer[data-v-890cd9fe] {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            gap: .5rem;
+            color: #fff;
+        }
+
+        .financialServices__container-box[data-v-890cd9fe] {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            justify-content: space-between;
+            padding: .4rem 0 0;
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+
+        .financialServices__container-box>div[data-v-890cd9fe] {
+            width: 48%;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            -webkit-box-pack: start;
+            -webkit-justify-content: flex-start;
+            justify-content: flex-start;
+            color: #666;
+            padding: 0.14rem;
+            margin: 0.13333rem 0px;
+            background: #ffffff;
+            box-shadow: 0 0.05333rem 0.21333rem #d0d0ed5c;
+            border-radius: .13333rem;
+        }
+
+        .financialServices__container-box>div img[data-v-890cd9fe] {
+            width: 1.06667rem;
+        }
+
+        .financialServices__container-box>div>div[data-v-890cd9fe] {
+            position: relative;
+            padding: .13333rem;
+            border-radius: .26667rem;
+            background: rgba(255, 255, 255, .5);
+            box-shadow: 0 0.10667rem 0.21333rem #d0d0ed5c, inset 0 -0.05333rem 0.16rem #fff;
+        }
+
+        .financialServices__container-box-para[data-v-890cd9fe] {
+            padding: 0 .13333rem;
+            box-shadow: none !important;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            flex-direction: column;
+        }
+
+        .financialServices__container-box-para h3[data-v-890cd9fe] {
+            font-size: .33333rem;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .financialServices__container-box>div span[data-v-890cd9fe] {
+            font-size: .32rem;
+            color: #666;
+        }
+
+        .serviceCenter__container[data-v-50e93753] {
+            padding: .53333rem .32rem;
+            border-radius: .26667rem;
+            background: #fff;
+            height: 5.33333rem;
+            box-shadow: 0 0.05333rem 0.21333rem #d0d0ed5c;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            margin-top: 15px;
+
+        }
+
+        .serviceCenter__container h1[data-v-50e93753] {
+            margin-bottom: .58667rem;
+            color: #151515;
+            font-size: .4rem;
+        }
+
+        .serviceCenter__container-items[data-v-50e93753] {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-items: center;
+            gap: .32rem;
+            color: #666;
+        }
+
+        .serviceCenter__container-items__item[data-v-50e93753] {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            gap: .13333rem;
+            font-size: .32rem;
+        }
+
+        .serviceCenter__container-items__item img[data-v-50e93753] {
+            width: .69333rem;
+            height: auto;
+        }
+
+        .game[data-v-f4c17e23] {
+            margin-top: .4rem;
+            background: none !important;
+            box-shadow: none !important
+        }
+
+        .game h1[data-v-f4c17e23] {
+            color: #333;
+            font-size: .48rem;
+            font-weight: 700;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            gap: .26667rem;
+            margin-bottom: .13333rem
+        }
+
+        .game h1[data-v-f4c17e23]:before {
+            content: "";
+            display: block;
+            height: .4rem;
+            width: .08rem;
+            background: #F64646
+        }
+
+        .game .items[data-v-f4c17e23] {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+            gap: .2rem
+        }
+
+        .game .items .item[data-v-f4c17e23] {
+            width: calc(33.3333333333% - .2rem);
+            height: 2.93333rem;
+            border-radius: .26667rem;
+            overflow: hidden
+        }
+
+        .game .items .item img[data-v-f4c17e23] {
+            width: 2.93333rem;
+            height: 2.93333rem
+        }
+    </style>
+</head>
+
+<body style="font-size: 12px;" class="">
+    <div class="customer" id="customerId" draggable="true" onclick="location.href='/keFuMenu'"
+        style="--76181987: 'Roboto', 'Inter', sans-serif; --17a7a9f6: bahnschrift;">
+        <img class="" data-origin="/assets/png/icon_sevice-9f0c8455.png" src="/assets/png/icon_sevice-9f0c8455.png">
+    </div>
+    <div id="app" data-v-app="">
+
+        <div data-v-432e6ed0="" class="home mian game">
+            <!-- <div data-v-106b99c8="" data-v-8cd483ca="" class="navbar">
+                <div data-v-106b99c8="" class="navbar-left"></div>
+                <div data-v-106b99c8="" class="navbar-title"></div>
+                <div data-v-106b99c8="" class="navbar-right" onclick="location.href='/keFuMenu'">
+                    <div data-v-8cd483ca="" data-v-106b99c8="" class="c-row">
+                        <img data-v-8cd483ca="" data-v-106b99c8="" src="/images/audio.webp" class="audio">
+                    </div>
+                </div>
+            </div> -->
+            <div data-v-8cd483ca="" class="menu-box">
+
+                <div data-v-8cd483ca="" class="info p-t-30 p-l-30 p-b-30 p-r-20">
+                    <div data-v-8cd483ca="" class="c-row c-row-between c-row-middle state-box c-pr">
+                        <!-- <div data-v-8cd483ca="" class="c-row c-row-middle">
+                            <div data-v-8cd483ca="" class="user-img">
+                                <img data-v-8cd483ca="" src="/assets/png/1-a6662edb.png" class="img">
+                            </div>
+                            <div data-v-8cd483ca="" class="p-l-10 infoName">
+                                <div data-v-8cd483ca="" class="name mb3 c-row c-row-middle"> </div>
+                                <div data-v-8cd483ca="" class="id tag-read mb3" data-clipboard-text="42472"></div>
+                                <div data-v-8cd483ca="" class="number mb3"> </div>
+                               
+                            </div>
+                        </div> -->
+                        <div data-v-5b1caab5="" class="userInfo__container-content-wrapper">
+                            <div data-v-5b1caab5="" class="userInfo__container-content__avatar"><img data-v-5b1caab5=""
+                                    src="https://91clubin.in/assets/png/1-a6662edb.png" class="userAvatar"></div>
+                            <div data-v-5b1caab5="" class="userInfo__container-content__name">
+                                <div data-v-5b1caab5="" class="userInfo__container-content-nickname">
+                                    <h3 data-v-5b1caab5="" class="name"></h3>
+                                    <div data-v-5b1caab5="" class="n0"></div><img data-v-5b1caab5="" class="editPencil"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAAUVBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////8IN+deAAAAGnRSTlMAZjN/DllfHwa/Jm8sPxnvn0oT38+PTjhAr4Ga/9wAAAE+SURBVFjD7dfBboMwEEVRG8YGEwiBBJL6/z+0JU31FAQRnpcuWnE33h15xmwwe/+9Muu8dV3FMo195Cjq6C3qRO1k9iknrAOJdSCRDqSSc9A11SnsSsfUh1+DukSo9GtS6paua1Cx3TjIq9nqzU4eD9MxrkDZdieG6RTlaHC+al5sqU9w4uX+cG7JcSlO/N5S7xegKsmJ7X0TlfJCcB77NrWdJxsdNCxKdZqDNZnepX1DcJA3U3LjHNzJVE7poNyA0jho+Hmk4uY0Djo3BmkcdCpoBxTpoFCQDl5vQ55zUOAc1L7JEc5BDeegkXNQzjnog3NQ4BzUvskRzkEN56CRc1BOOoA4B3nOQUI6aOAcJCGi8+WUezHKfGgn4eAzMXu/VllnqiqZQc4qc/NfMnX982R6aDZbppzN12bv7/YJ4RFYNVkqAPgAAAAASUVORK5CYII="
+                                        style="display: none;">
+                                </div>
+                                <div data-v-5b1caab5="" class="userInfo__container-content-uid"><span
+                                        data-v-5b1caab5="">UID</span><span data-v-5b1caab5="">|</span><span
+                                        data-v-5b1caab5="" class="txt id" data-clipboard-text=""></span><img
+                                        data-v-5b1caab5=""
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYBAMAAAASWSDLAAAAG1BMVEUAAAD////////////////////////////////rTT7CAAAACHRSTlMAf2/fzyAQv1i/o5gAAABWSURBVBjTY0AHSYJgoApis1p0gEFzApDD1AKR8VAAchgbIaolBIA6xNvBOkAchA4gB6EDyEHooBOn0EMBweloDkCSUUP2ALrX2GBeCADJB0Fk1NCDCQANHCEHp1BAOwAAAABJRU5ErkJggg==">
+                                </div>
+                                <div data-v-5b1caab5="" class="userInfo__container-content-logintime"><span
+                                        data-v-5b1caab5="">Last login:&nbsp;</span><span data-v-5b1caab5="">Today</span>
+                                </div>
+                                <div data-v-5b1caab5="" class="userInfo__container-content-logintime"
+                                    style="display: none;"><span data-v-5b1caab5="">&nbsp;</span></div>
+                            </div>
+                        </div>
+                        <!-- <div data-v-8cd483ca="" class="profile">
+                            <i data-v-8cd483ca="" class="van-icon van-icon-arrow"
+                                style="color: rgb(51, 51, 51); font-size: 20px;">
+                                
+                            </i>
+                        </div> -->
+                    </div>
+                </div>
+                <div data-v-8cd483ca="" class="total-box">
+                    <div data-v-8cd483ca="" class="infoItem">
+                        <div data-v-8cd483ca="" class="c-row c-row-middle">
+                            <div data-v-8cd483ca="" class="p-l-15">
+                                <div data-v-8cd483ca="" style="font-weight: 400;
+                                font-size: .37333rem;
+                                color: #666;" class="des u-m-b-15">Total Balance </div>
+                                <div data-v-8cd483ca="" class="c-row c-row-middle c-row-center p-t-5">
+                                    <div data-v-8cd483ca="" class="money">
+                                        <div data-v-8cd483ca="">
+                                            <!---->
+                                            <span data-v-8cd483ca="" style="color: rgb(24, 24, 24);" class="txt"> ₹
+                                                0.00
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div data-v-8cd483ca="">
+                                        <img data-v-8cd483ca="" width="20px" height="20px"
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAMAAADyHTlpAAAAOVBMVEUAAACjo6OgoKCjo6OhoaGjo6Ofn5+np6ejo6Ojo6OlpaWioqKkpKSjo6Ojo6Ojo6Ojo6OkpKSjo6PuE3LfAAAAEnRSTlMAf0C/H98QIM/vMGCfj29Qr1+b1SuLAAAA4UlEQVQ4y+3Sy3aEIBBF0eJR8hCx+/7/x8amdCVCZYUMetZnpm4BBfr05hbblX+lEX2pBJ1uUDKTK1ojUGgyA2z/sHmcbVetG4YNDHBQaEXqxjykbj3gbzceSIdUbUcN8ARyQlz+oBUwHqC7dTF8000ehISNXpQsflh5T6gBrHw8L0JpBR6nlDmE7ucOZ7CnRsVe9AVio4GvAexCjcqFPaG8Vw6a27RXQrvEAg7sh189VNHa7/sFWP24AEY5F0qri3VcVwo0GYNnbU7g56xlgIvp0mfyBWNMer4W11Xp03v7Att9D7xKb3uAAAAAAElFTkSuQmCC"
+                                            class="img m-l-10 reload_money">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-v-604c2603="" class="totalSavings__container-content">
+                            <div data-v-604c2603="" class="totalSavings__container-content-item"
+                                onclick="location.href='/wallet'">
+                                <div data-v-604c2603=""><img data-v-604c2603="" src="/assets/png/wallets226.png"
+                                        alt=""><span data-v-604c2603="">Wallet</span></div>
+                            </div>
+                            <div data-v-604c2603="" class="totalSavings__container-content-item"
+                                onclick="location.href='/wallet/recharge'">
+                                <div data-v-604c2603=""><img data-v-604c2603="" src="/assets/png/rechargeIcon226.png"
+                                        alt=""><span data-v-604c2603="">Deposit</span></div>
+                            </div>
+                            <div data-v-604c2603="" class="totalSavings__container-content-item"
+                                onclick="location.href='/wallet/withdrawal'">
+                                <div data-v-604c2603=""><img data-v-604c2603=""
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAMAAAAOusbgAAAAXVBMVEUAAABcpf9cpv9bpv9cpv9cpv9dpv9cpv9bpf9dpv9ZpP9cpv9cp/9cpf9bpP9Yp/9cp/9ZoP9cpv9cpv9cp/9Ypf9Ynf9Onf9cpv9cpf9bpf9dpv9fpP9ao/9cpv/+vZV2AAAAHnRSTlMAZoxfTb9Z3yY/H/DFeXAazxGWj4I5DQbZvJ9wRkB5MVsiAAABcklEQVRo3u3T3XKCMBCG4Q0/ASMoiIBa3fu/zHac2nQwESzZHHS+5zAHvGwWCAAAAOBJm3Z5wasUeZe19J5NzoHk6TvZhgMqlqZNzoFdzKJxtxxcsaFZKYtIV3RFyxsW8/K2TcFitob8Liwoj77g+csuWFQReeD5kXN2kd+yYXEtuWQsLiWXjsV1cVds5TF/pvkfiiNAGOEHhP9ZWEWAMMIPCCOMMMIII4zwD4QRRhhhhBH2ho+JZU93iUsdLnzY8i/bw3e2YbdqFyhc88TxflyxT7M+7C6c7eu47cKETzxxUl8S9kvChM9PS7yvmP3qv4X19JN2P7dhn0rN0eSSLfyqK3ZrPtScjFx69SSxjva0Tlxs1q8nl1KJM+QyKnEjeZYsLCO3vRJWkodWojRR/JHtwPG3fCO/IVVi9EBWzMtu6aVSWYILli/b7qxWq+D0nhYYbiqwbKBlSh00u6flzDVy1hpNn+mVm7325UgAAAAAU5/94mxKVD2pxAAAAABJRU5ErkJggg=="
+                                        alt=""><span data-v-604c2603="">Withdraw</span></div>
+                            </div>
+                            <div data-v-604c2603="" class="totalSavings__container-content-item">
+                                <div data-v-604c2603=""><img data-v-604c2603="" alt=""
+                                        data-src="/assets/png/vipicon.png" src="/assets/png/vipicon.png"
+                                        lazy="loaded"><span data-v-604c2603="">VIP</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- <div data-v-8cd483ca="" class="promote c-row c-row-middle-center" onclick="location.href='/promotion'">
+                    <div data-v-4ac977f5="" class="financialServices__container-footer">
+                        <div data-v-4ac977f5=""><img data-v-4ac977f5="" src="/assets/png/vault1.png" alt="">
+                            <div data-v-4ac977f5="">
+                                <div data-v-4ac977f5=""><span data-v-4ac977f5="">Safe</span>
+                                    <div data-v-4ac977f5="" class="financialServices__container-footer-des">
+                                        <h4 data-v-4ac977f5="">₹0.00</h4><i data-v-4ac977f5=""
+                                            class="van-badge__wrapper van-icon van-icon-arrow"></i>
+                                    </div>
+                                </div><span data-v-4ac977f5="">Daily interest rate 0.1% + VIP extra income safe,
+                                    calculated every 1 minute</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div data-v-8cd483ca="" class="nav-muen c-row p-r-15 p-l-15">
+                    <div data-v-8cd483ca="" class="item c-tc"><img data-v-8cd483ca="" width="45px" height="45px"
+                            src="/images/s6.png" class="img">
+                        <div data-v-8cd483ca="" class="name"> Bet History</div>
+                    </div>
+                    <div data-v-8cd483ca="" class="item c-tc"><img data-v-8cd483ca="" width="45px" height="45px"
+                            src="/images/s7.png" class="img">
+                        <div data-v-8cd483ca="" class="name"> Transactions History </div>
+                    </div>
+                    <div data-v-8cd483ca="" class="item c-tc"><img data-v-8cd483ca="" width="45px" height="45px"
+                            src="/images/s8.png" class="img">
+                        <div data-v-8cd483ca="" class="name"> Login History </div>
+                    </div>
+                    <div data-v-8cd483ca="" class="item c-tc">
+                        <div data-v-8cd483ca="" class="messageImg"><span data-v-8cd483ca="" class="number">34</span><img
+                                data-v-8cd483ca="" width="45px" height="45px" src="/images/s9.png" class="img"></div>
+                        <div data-v-8cd483ca="" class="name"> News </div>
+                    </div>
+                </div> -->
+                <div data-v-890cd9fe="" data-v-5768d7f3="" class="financialServices__container">
+                    <div data-v-890cd9fe="" class="financialServices__container-footer"><!----><!----></div>
+                    <div data-v-890cd9fe="" class="financialServices__container-box">
+                        <div data-v-890cd9fe="" onclick="location.href='/betrecords'"><img data-v-890cd9fe=""
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAtFBMVEUAAABcp/9cp/9epv9dn/9cpv9cpv9cpf9cp/9bpv9cpv9dp/9cpP9bp/9eqP9apf9Sn/9dpv9Jmv9eqP9ElP9cp/9cpv////82if+t0v/B3f+Zx//W6P/m8f/N4f/0+f9Il/9Ckv9wsf9Rnv9Qmf9Lmf/r9P/a6f+00/86jf+Duf9ao/+jzf9Xo/8+j/+/2v+32P+Pwv9mrP9op//g7v+31/98tv91rv9mq//N4/+jzP+Nvf89OsrBAAAAFnRSTlMAf78gEN/vz29fr58/n28wz49vT09A/ixTGwAAAdVJREFUWMPtlttygjAQhkHAQ221xwSlCSogKJ6t1bbv/16Ngc7KTIBlai+c+t3JzH4uu3802pXzYnbuaoXcdIyicr1OymnnKowGQWHlGaC+zGAq61sETVspsAgeVQsvpAJNhaBZRXCnEOhVBDe/FdSKBdOPVxUOVjCiOfSQgl6eYIwUzPIEb0jBZkyVuOsSAbB2VBzKhljKfxKMVn0FK3wSXarm8+KTSB30EGc9FdMLysEfCuZeMAi8UsHBgcmt4XE8mNgJw/viJGbW2Ccpng0s2gY+SO9EMrAlX+H2KCCWgY7yFOoFjC6P70CEAXGY4AAEstqPmHjCWBjDn7wyiTs4xLuRnP5E1ruZ19IrrHGYtk9Dl7qcRwER1E28QDYQUxoJCU9mIGiiBLDBrRhoRlDDCWCElIb+qaCOE8AOOZWEkZ8IiIkVDBOB+PoEFhCJge8gZboUWxCaFXSAn8FPEvmQUbfiDLyMwF5SuoGbEioHGYHP0ny3cNc8GMKWMXZy2bG0DLdFglhGMaIp3IMGgBopm4LPORdbiPaTOeQQ1wJsUiZxoL70P2AMTri3F+JjA+oxi4DfBMEiJnVdU9KyChWejHRAGrqp5dF90gt5fL7tmtqVs/MN94DbsbuNvhYAAAAASUVORK5CYII=">
+                            <div data-v-890cd9fe="" class="financialServices__container-box-para">
+                                <h3 data-v-890cd9fe="">Game History</h3><span data-v-890cd9fe="">My game
+                                    history</span>
+                            </div>
+                        </div>
+                        <div data-v-890cd9fe=""><img data-v-890cd9fe=""
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAArlBMVEUAAABK461L46xE36RL4q1L465K4q1O4a9K4a1K46xK4qxK4a1K46xL4qxK4q1L4axK4q1K361M4q0T0IE53J8u2JUg2I5L4qz///8GzHal8NW79N+O7MvS9+rg+e4X0oTp/PUo15Al0odi5rdE4KY33J0l04ch1YwLznph5rYQ0H6w8tqa79CC5bpW5LEx2Zcs2JT0/vqD68Z46cHk+vHg+e+P7cvH9uWa7tBt57tTDyxnAAAAF3RSTlMAf78Qn28/H3+vj99g79/PTzDv779vT8FjD08AAAGZSURBVFjD7ZZpb4JAEIaVS8Gj2msArYoCWrxQe/7/P1aWjQTbYXcItompzxcTk3kyzLwLW7tyXlRdU4SYekNU3rwFOVqhonEDJFpFBlZPM6hofRvIaKigC3SwFgwogY4IdIBqz1CHEphVBYpYcHh/wnijCmZ2AS5R4BYJJkTBqkjwShRsJnj9bk8QcPZDjI1siFL+k2C2HCAs6Unc2Tiri0+iPSQP8cPFOFxQDn5R4AdbbxtIBZuhm7HPVXuRw5nfi5N4ssbB8e9g4WTcNUsE6RNSPCfHGDSVHOXDaX24DpkATOph4gcgdo6M7FHIBGDRjvPyOZ3fIidIDEwA/RJrnDsZU2bY8jDQBayBcGRnvKR9qWRB4CSsf3zl2mRBzHvPTTbtwEIEshFkOWCYVQXK3wliB92CVXULvRI5QLeg0q95XpbBkL8QkLueAQL8KDOkAhblzvc7twLCKXADF0Q+dls1QITHDesp+/EAAHknWXIDJ8LqGU2QzIEz9qFl1FDaXRARjJN1LuKOwstR+r26kIdHo1G7cn6+AEIy4spd9Gx2AAAAAElFTkSuQmCC">
+                            <div data-v-890cd9fe="" class="financialServices__container-box-para">
+                                <h3 data-v-890cd9fe="">Transaction</h3><span data-v-890cd9fe="">My transaction
+                                    history</span>
+                            </div>
+                        </div>
+                        <div data-v-890cd9fe="" onclick="location.href='/wallet/rechargerecord'"><img data-v-890cd9fe=""
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAMAAAC8EZcfAAAAbFBMVEX6WloAAAD5WFj7WFj6WVn/W1v7Wlr6Wlr7W1v6Wlr6XFz6Wlr5WFj8W1v6WVn6WVn5WVn/VVX7W1v+XV36WVn4WFj6W1v5WVn5WVn7Wlr6W1v8XFz7WVn9XV3/SUn6WVn6Wlr/XFz4WVn5WVlMptElAAAAI3RSTlNmAJ9AxQxNWXkzJRn1X9eOsgZGE+u8cOzigl9ZOSwHqZ8ycDPAW1MAAAL6SURBVHja7dzbbuMgFIXh5WBjAz47SZNOjvX7v+NI7QVSpwkQbGBm9n8bX3zCiVEks5ElHgEJ6BgBk4uABHSMgMnlBiwmeRbsM2ycAvtMCKmGTLcgcFAn/g7dZnZqA907P6mFgYPUOC+gbpTLAYe71nkDdSUrfIGatyhQxwp/4FnzlgeilJ7AYQTWBAJs8AEWJdYGoiwMQINvXaBZCINvZaBZCINvbaAWugM5QgHBXwEKhAPi7A4sEBLYFM5AFhQI7gpUCAuEcgSOoYHcDVggNBCTE5CFB96dgGV4YOMCVAgPhHIAihjAuwOQxwByByBiAJvBGjhFAWKyBso4QGkNFHGAJ2vgGAfIrIE8DpCnDiytgWXqQMQBgoAEJCABCbg2sO73+1udLnB7BIDqLVXgtgK+hGkCv3xfwhSBh0p/WB3SA7Z7QPdxSA2Y41t5WsAd/qhPCdjjh/p0gD1+rE8FeMWDrkkA6xsedksAWB/xpGMdDdjp7fdxelPpggNx0NubWbhFeGDVznNb2V4XAQjs97YXAhGALhHw5whIQAIaIiABCWiIgAQkoKG/Gdjt8mfturjAqp1NHaqYwMNsro0I7GabunjAnRVwFw+YWwFzWkHP72AVD4jewtcjIhDXNwOvvsbe6rrNs7o9QHsxQEACEtAQAQlIQEMEJCABn9a19fxqdV55AUvv/x1m4nHlN9E3s2f1x7rv8rezb1cPIIOx2bsc3xutgScYq1cACmugDHGLbx5HhiYY63x928rj0NXQRHnMLHvwD7d2XvZBzR2AAhESDkCFCCkzUNcgeGX2AJjKPWZOwAnBK2yAOo7AjdlDYBo/E/UQmMYSMvdRGg1CVtgCdWcE7J49ASZwk/lrA3F+IUDmgTjxhYaRQtGFpqFMsYTa5zUYjGHlxovnaDW56iI2Z//hdAXDWjXikvkANVGvYkieBpqT49I6Li8Lz8BUJ94shTsprTMCXbooKQTzSJzlVGSf/Z9jTs0RMLkISEDHCJhcBPzngb8BncLoIXGJNNsAAAAASUVORK5CYII=">
+                            <div data-v-890cd9fe="" class="financialServices__container-box-para">
+                                <h3 data-v-890cd9fe="">Deposit</h3><span data-v-890cd9fe="">My deposit
+                                    history</span>
+                            </div>
+                        </div>
+                        <div data-v-890cd9fe="" onclick="location.href='/wallet/withdrawalrecord'"><img
+                                data-v-890cd9fe=""
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAMAAAC5zwKfAAAAbFBMVEUAAAD/iRv/ihz/hhr/iBr/iRv/iB3/iRv/ihv/iRz/hR3/iRz/iRr/hRT/iR3/ihv/iRr/hxn/iRv/iRv/gCr/iR3/iRz/hxv/iRz/iRz/iBz/ihz/ixv/hRH/iRz/ih3/iBv/iRv/kiT/iR3fckNCAAAAI3RSTlMAZp8mH1/gb1iPEH9NDPU+MBmxeQbvz0Dsxb6oORLZv5aCBztI/qIAAAHtSURBVFjD7djJkoIwEIDhJISwyiqiuIxOv/87ToFV0wQZk9A5zMH/ZFn6VbNEAfbp02+yDMvKn5Z0MNXkPrg0AUxJ+ngKtELPHop0D0W6RxfRM4t0D0W6hyLd08s9e9BJuqc3ePKw0rMHiWcPlAM4gE2ppbaX+VlYdC7rvYVW5dyhONgZuJC7Vr0Z8xrzDcV/DhnwjQXrnuTcq7gLt4Ph2lbHnFBu3IH0jY5pYLz0ak6sXoAlFbwYtpi6zXtObq8vOjp4pR8Tvdqw7IhnYvBPwOgufrvQwfYGs0Iy+CjAK9gW4Bc8gV8wAs9g4hsUvsGHBRjdT8cCQB1EawajwgRGzewjJzPZGMDHEbQa44jqLShg2WASW/UGjOC1EzclbsUfoOxgpfP2ny8FaxXtVjBcUgqmbi6gZNjXgpNMHmAs2vafInXvMF6MV8578Ypgrnkind582g4gw5Lnl/tejB6bKmHsaO/lDBsdUONgGWT6nY89WC3BZnrZs6lKgSu4W4IDw8oOnhXWXv+67rKV01I5D4gHAMXIsJzNV4dpNxczwO6WXvzNtBJAce4dN95L4VJpkgFmNc4ejog5D3j5Zi+lhzWwteHy2vqZgDBiYV7hdCaxiwJD9c78HBP7koycFMj1zEtpnwkhkjBlnxz6AfNNngUB9TYwAAAAAElFTkSuQmCC">
+                            <div data-v-890cd9fe="" class="financialServices__container-box-para">
+                                <h3 data-v-890cd9fe="">Withdraw</h3><span data-v-890cd9fe="">My withdraw
+                                    history</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-v-21f3500a="" data-v-8cd483ca="" class="list" style="gap: .4rem;
+                padding: 0 .32rem .32rem;
+                position: relative;gap: .4rem;
+                padding: 0 .32rem .32rem;
+                position: relative;
+                margin-top: 15px;
+                margin-left: 15px;
+                margin-right: 15px;
+                background: #ffffff;
+                box-shadow: 0 0.05333rem 0.21333rem #d0d0ed5c;
+            ">
+                    <div data-v-0341cbde="" class="settingPanel__container panel-daman">
+                        <div data-v-0341cbde="" class="settingPanel__container-items">
+
+                            <div data-v-0341cbde="" class="settingPanel__container-items__item ar-1px-b"
+                                onclick="location.href='/notification'">
+                                <div data-v-0341cbde="" class="settingPanel__container-items__title"><img
+                                        data-v-0341cbde=""
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANrSURBVHgB7Zo/TBRBFMa/t5wQCBjjVRiNWnhUJhQ2UlFZaYmtJiYao7GhsNCS1k5DNLG4VktoNdpARWJiR4NGgzGRSMScinCPN7O3wB1vj9t/d7fH/JLluNndmfnmzXvz5nYBh8PhcDgcnYIQE36FfqxgACcwjHbyH5t0H2uISSTB/Byj2MJ59OGsfB1BJ/FE9LY9PkYZgJYEizWHsY5JVHEK3YiHVbH8O7qH34ddeqhgfoESGJflGEA3w9iUmbdAt7Hc7LKmgnkW5+SKK8gTnli6iWgv7ISdxiSWzRvbmOBn4YE0VLCEgUvodGCKA8nq4dm+q6iCa9YtIa9I3+2yqaBbeL1Lo3EUvmNMK9YF/5O1Nu8UUNSKvZCL25s9ZUEBJ7ViXbDXA4K3cFwr1gVHSTIIQ3KMS01FZIVpw5MlMkobpAetApJgOlClaam8KINUAXFZPj8gTdibkHqnpN4h+WbaeGTbiomHJDDOWLE+0iG6K8c1pIbU5fENv+5aG4QLSEAyC8OmcBXsdchMpavy57SMRjm2JSgYvIZcgCUdYnxFApJauALmGduResbB9DiWX5t7zL2aWPATIP5e2K8+OWviVzPyWe+7VOu4CWitYvzVv6d+oIgXULVtJBJrSENwYOlZ+Weu4UwEvz7gr0Hlc7IPL0tPYweq/ST14XoY82IN8TGq73jg1yQZbrXBSv4UvgkcyN0rdoPKzfe3UUlXsMEuS/xFBE43TE3j1+NStrzr8/5yVlLqSMVfNdIX7BP49ZSommg4V2r6s4Px1228TmsKN5KVYNSWpLIIWGtxbTZxYF7ue5NSZFHJTnCA8WvwovVjprEDERhmQGCs+jYrq+4ne8E+JmEoG/UizOTFg7a0ij+7IjO06n7aJXgPX2BbRdY3f8RwgnsdJ7jXcYItJD/U5h3zcE1BF1w9/LFj11PAL604bEqnvktpOyFGCxP8A3mH8Ekr1gUX0910d4Sf+KYVq4Lpujg851i09J0eYkM7Fb4s9WMpp9F6Q8LVUtjJUMF0S24kLCJvMBbDrGvonZdazGwUAyV6qSWAX2IEfzGJPoyiG2GsyjR+38yyAdFeTHsq8bsPF2HiOGX4tLA1NuTXk8+SYKzQHT0ia8R+9dBgB+CY/lgyM9YloRjEJj3ogfTX4XA4HI4jxg4JLvQQGxoIkwAAAABJRU5ErkJggg=="><span
+                                        data-v-0341cbde="">Notification</span></div>
+                                <div data-v-0341cbde="" class="settingPanel__container-items-right">
+                                    <h5 data-v-0341cbde="" style="display: none;"></h5><span data-v-0341cbde=""
+                                        style="display: none;">English</span><i data-v-0341cbde=""
+                                        class="van-badge__wrapper van-icon van-icon-arrow"
+                                        style="color: rgb(51, 51, 51);"><!----><!----><!----></i>
+                                </div>
+                            </div>
+
+                            <div data-v-0341cbde="" class="settingPanel__container-items__item ar-1px-b">
+                                <div data-v-0341cbde="" class="settingPanel__container-items__title"><img
+                                        data-v-0341cbde=""
+                                        src="https://9987up.co/assets/png/languageIcon-634b6df2.png"><span
+                                        data-v-0341cbde="">Language</span>
+                                </div>
+                                <div data-v-0341cbde="" class="settingPanel__container-items-right">
+                                    <h5 data-v-0341cbde="" style="display: none;"></h5><span
+                                        data-v-0341cbde="">English</span><i data-v-0341cbde=""
+                                        class="van-badge__wrapper van-icon van-icon-arrow"
+                                        style="color: rgb(51, 51, 51);"><!----><!----><!----></i>
+                                </div>
+                            </div>
+                            <div data-v-0341cbde="" class="settingPanel__container-items__item ar-1px-b"
+                                onclick="location.href='/redenvelopes'">
+                                <div data-v-0341cbde="" class="settingPanel__container-items__title"><img
+                                        data-v-0341cbde=""
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALTSURBVHgB7Zq9axRBGMaf2ZxXKR5cERQLo9iJXGulhVh5oI1gp1ioWFj6dwhKsBCTSrAKCII2xsZUYrQ6I2okoKSIHJ6I3l3u9dn1FtS72Z3Zj7C7zK+4ney8O5nfzs3H3g7gcDgcJUIhI+Qh6ujiNEbYDw9bGOCJuo7vSADL2s2yTgZlCdbQxAt1Hn1kQCbCQQW/os3knr9O97CNR7bSU8vyb2CDZWUgnVpYIxtiJR1ZVkbSqYRjZEOMpI3KykDaQxriZRHkz6AtdyikwfDGgX26yb7dRgoSC8td7EO8bIhW2lg2hNJym+IJSdfCdkxIW8uG7OKMkJDYPiz32Wt+osXpocXoxj+ZHo7y0/af99hK74JUDUeYtpMVjgX+VDXJsrqG5bjLI4XZGi3U1DMmGygH6xjKOQ6Qq7oArbDM4yA89QrlkQ3poi5z6hKPU9D3YcFZlE/Wp8FJ66IuUy9cUydQVoTLUg1Ro3QZWzdkry5jJ6elQuCEq45eeFs+oby81mVEtfACyopgSZelFQ6WaSO1iLIhcitqiRm/lp7nJO7hBkNbKC5diq6yZRcpuxAVaPQDgNzjAn+AC7DjOIs/jCSIrLBm7y2u6KmreGAS6EbpquOEq44TrjpOuOo44arjhKtODfkxmHKuDyUdHjt8sqnzAeEQRB2biFLZvPyeRp7CHVb8AMXG75Jkkx8rwauSP/SZfsPzH6DUqf/iNpATeQpTTB7zOBu0mGBTGyeyxJjZ4C99XCbkKexX3v9qbvBoEpuraIgbpauOE646RsLqMt/aVwTzFlb4haIyY143c2HJb/WTmpH5bj8b4S8oKn3zupkLe3iLovID66ahxsLqSnAXizd4CdbUTfN62U1LQzwt2ODVwze8tLnAenPp+D3TGdjunssawWfKPrdpXZ/Eu2mDvZZDzDHZ5LTgP9rlfQP8Xblb8J+uavg47mIOh8NRbX4DRmHeTbIJf+AAAAAASUVORK5CYII="><span
+                                        data-v-0341cbde="">Gift
+                                        Code</span>
+                                </div>
+                                <div data-v-0341cbde="" class="settingPanel__container-items-right">
+                                    <h5 data-v-0341cbde="" style="display: none;"></h5><span data-v-0341cbde=""
+                                        style="display: none;">English</span><i data-v-0341cbde=""
+                                        class="van-badge__wrapper van-icon van-icon-arrow"
+                                        style="color: rgb(51, 51, 51);"><!----><!----><!----></i>
+                                </div>
+                            </div>
+                            <div data-v-0341cbde="" class="settingPanel__container-items__item ar-1px-b"
+                                onclick="location.href='/about'">
+                                <div data-v-0341cbde="" class="settingPanel__container-items__title"><img
+                                        data-v-0341cbde="" data-origin="https://9987up.co/assets/png/about-eb7d02f7.png"
+                                        src="https://9987up.co/assets/png/about-eb7d02f7.png"><span
+                                        data-v-0341cbde="">About
+                                        us</span></div>
+                                <div data-v-0341cbde="" class="settingPanel__container-items-right">
+                                    <h5 data-v-0341cbde="" style="display: none;"></h5><span data-v-0341cbde=""
+                                        style="display: none;">English</span><i data-v-0341cbde=""
+                                        class="van-badge__wrapper van-icon van-icon-arrow"
+                                        style="color: rgb(51, 51, 51);"><!----><!----><!----></i>
+                                </div>
+                            </div>
+                            <div data-v-0341cbde="" class="settingPanel__container-items__item ar-1px-b"
+                                onclick="location.href='https://lottery.com/77SG.apk'">
+                                <div data-v-0341cbde="" class="settingPanel__container-items__title"><img
+                                        data-v-0341cbde="" src="/assets/png/icon_download.png"><span
+                                        data-v-0341cbde="">Download APP</span>
+                                </div>
+                                <div data-v-0341cbde="" class="settingPanel__container-items-right">
+                                    <h5 data-v-0341cbde="" style="display: none;"></h5><span data-v-0341cbde=""
+                                        style="display: none;">English</span><i data-v-0341cbde=""
+                                        class="van-badge__wrapper van-icon van-icon-arrow"
+                                        style="color: rgb(51, 51, 51);"><!----><!----><!----></i>
+                                </div>
+                            </div>
+                            <div data-v-0341cbde="" class="settingPanel__container-items__item ar-1px-b"
+                                onclick="location.href='/mian/forgot'">
+                                <div data-v-0341cbde="" class="settingPanel__container-items__title"><img
+                                        data-v-0341cbde="" src="/assets/png/about.png"><span data-v-0341cbde="">Security
+                                        and Safety</span></div>
+                                <div data-v-0341cbde="" class="settingPanel__container-items-right">
+                                    <h5 data-v-0341cbde="" style="display: none;"></h5><span data-v-0341cbde=""
+                                        style="display: none;">English</span><i data-v-0341cbde=""
+                                        class="van-badge__wrapper van-icon van-icon-arrow"
+                                        style="color: rgb(51, 51, 51);"><!----><!----><!----></i>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!---->
+                    <!---->
+                    <% if (level==1) { %>
+
+                        <div data-v-21f3500a="" class="item c-row c-row-between"
+                            onclick="location.href='/admin/manager/index'">
+                            <div data-v-21f3500a="" class="c-row c-row-middle">
+                                <img data-v-21f3500a="" width="24px" height="24px" src="/images/s1.png" class="img">
+                                <span data-v-21f3500a="" class="name">Administrator Area</span>
+                            </div>
+                            <div data-v-21f3500a="" class="c-row c-row-middle">
+                                <i data-v-21f3500a="" class="van-icon van-icon-arrow"
+                                    style="color: rgb(84, 94, 104); font-size: 20px;">
+                                    <!---->
+                                </i>
+                            </div>
+                        </div>
+                        <% } %>
+                            <% if (level==2) { %>
+                                <div data-v-21f3500a="" class="item c-row c-row-between"
+                                    onclick="location.href='/manager/index'">
+                                    <div data-v-21f3500a="" class="c-row c-row-middle">
+                                        <img data-v-21f3500a="" width="24px" height="24px" src="/images/s1.png"
+                                            class="img">
+                                        <span data-v-21f3500a="" class="name">Collaborator Area</span>
+                                    </div>
+                                    <div data-v-21f3500a="" class="c-row c-row-middle">
+                                        <i data-v-21f3500a="" class="van-icon van-icon-arrow"
+                                            style="color: rgb(84, 94, 104); font-size: 20px;">
+                                            <!---->
+                                        </i>
+                                    </div>
+                                </div>
+                                <% } %>
+
+                                    <!---->
+                                    <!---->
+
+                                    <!-- <div data-v-21f3500a="" class="item c-row c-row-between" onclick="location.href='/wallet'">
+                        <div data-v-21f3500a="" class="c-row c-row-middle"><img data-v-21f3500a="" width="24px"
+                                height="24px" src="/images/s3.png" class="img"><span data-v-21f3500a=""
+                                class="name">Wallet</span>
+                        </div>
+                        <div data-v-21f3500a="" class="c-row c-row-middle"><i data-v-21f3500a=""
+                                class="van-icon van-icon-arrow" style="color: rgb(84, 94, 104); font-size: 20px;">
+                       
+                            </i></div>
+                    </div> -->
+
+
+
+                </div>
+
+                <div data-v-50e93753="" data-v-5768d7f3="" class="serviceCenter-wrap">
+                    <div data-v-50e93753="" class="serviceCenter__container">
+                        <h1 data-v-50e93753="">Service center</h1>
+                        <div data-v-50e93753="" class="serviceCenter__container-items">
+                            <div data-v-50e93753="" class="serviceCenter__container-items__item"><img data-v-50e93753=""
+                                    class="" origin="https://9987up.co/assets/png/settingCenter-61690292.png"
+                                    src="https://9987up.co/assets/png/settingCenter-61690292.png"><span
+                                    data-v-50e93753="">Settings</span></div>
+                            <div data-v-50e93753="" class="serviceCenter__container-items__item"
+                                onclick="location.href='/keFuMenu#max-widget'"><img data-v-50e93753="" class=""
+                                    data-origin="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAL4SURBVHgB7Zo9bxNBEIbfsR1LIJAAV6SBNFAhIoUmVJEQJS1FmiQCia8fQEHBL6BEkJAitNS0oNCQhoggV0kDyMgREgGLICMn8Q2ziwskK96985zPZ/aR7Dvr1nvz3szezO0tEAgEAjmCkAL8BDMo0kMwJuXnCcSjIVZtoM0LdAefoIy6YF4uzqEdrUCDIs/TTTyHIqqCxbNnUaD3iO/Vw2igzBO0IFslCtBlBnpiYfvawzwUKaEPeBGn5ZKNI0JFxmtF9udkqwvhKi+hJnstHGBb+t+ke/iFhCQSbIUSpkToONr/HkAZ2kQ4Kd8Vu28uLjAlF6COfawmER47pPmZCGVcs2Kzwpy7iFlrS0xiCbYnaPc8yW9oQ2geekxsiSvaW7CHWGNcDdoQNnseN6IXcQGeeAnmFzjmFGsb4oN8dqCF6SuSPt3tpvmx2OiBn4d3cMmrHZvw40cqom0f0pcvYzYlOnEWHta73zGLeJgUdU6Mvoz4mDFbk4h6LX00Y/3zFFboumTuHrjTUiPR3diE4pps15CUJCXRV5yX72p/3bYwgbxQ6uTrHrgFj6VQTKRFwW2rdi2dLdH/JtiDIHjUCYJHnSB41OlriqcLkvqZ3NWOJ1uSV/WevDroCSYp24ErinNaTRA/+PsEpodmSE9Cl6Mi9iKUURTMb6GL8ewWlNELacZLCcEvMoaPQIMDmeko6IazQfemxfJOSGsMp5Q/Qh4edYLgUSfbSstMxbJ+6unFEFRaMhEMvMKAGIJKi6YxQLKvtIg3MECyrbRyPYYNmpVWSoQ83AVjF/nBuQTCx8PfkBeKqLuauAWX8Rl54Qe2XU2cgumGDWlnR5nDqNN99/Dzu2kR3mHY+Yk3Ps28BNMt6+EqhpUI6z7eNXinJbotb/MLjhU1WSA20V2s+zaPvbiUn8LUvt7LhFKmah0Rg0SraXlJHgMju4zpOLJhVyxf7Qy1WPS1fJiXcQb7dg1IRfGNQzeEltyF99CWFFnCxyRCA4FAIJf8Af1DzvrSv8KKAAAAAElFTkSuQmCC"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAL4SURBVHgB7Zo9bxNBEIbfsR1LIJAAV6SBNFAhIoUmVJEQJS1FmiQCia8fQEHBL6BEkJAitNS0oNCQhoggV0kDyMgREgGLICMn8Q2ziwskK96985zPZ/aR7Dvr1nvz3szezO0tEAgEAjmCkAL8BDMo0kMwJuXnCcSjIVZtoM0LdAefoIy6YF4uzqEdrUCDIs/TTTyHIqqCxbNnUaD3iO/Vw2igzBO0IFslCtBlBnpiYfvawzwUKaEPeBGn5ZKNI0JFxmtF9udkqwvhKi+hJnstHGBb+t+ke/iFhCQSbIUSpkToONr/HkAZ2kQ4Kd8Vu28uLjAlF6COfawmER47pPmZCGVcs2Kzwpy7iFlrS0xiCbYnaPc8yW9oQ2geekxsiSvaW7CHWGNcDdoQNnseN6IXcQGeeAnmFzjmFGsb4oN8dqCF6SuSPt3tpvmx2OiBn4d3cMmrHZvw40cqom0f0pcvYzYlOnEWHta73zGLeJgUdU6Mvoz4mDFbk4h6LX00Y/3zFFboumTuHrjTUiPR3diE4pps15CUJCXRV5yX72p/3bYwgbxQ6uTrHrgFj6VQTKRFwW2rdi2dLdH/JtiDIHjUCYJHnSB41OlriqcLkvqZ3NWOJ1uSV/WevDroCSYp24ErinNaTRA/+PsEpodmSE9Cl6Mi9iKUURTMb6GL8ewWlNELacZLCcEvMoaPQIMDmeko6IazQfemxfJOSGsMp5Q/Qh4edYLgUSfbSstMxbJ+6unFEFRaMhEMvMKAGIJKi6YxQLKvtIg3MECyrbRyPYYNmpVWSoQ83AVjF/nBuQTCx8PfkBeKqLuauAWX8Rl54Qe2XU2cgumGDWlnR5nDqNN99/Dzu2kR3mHY+Yk3Ps28BNMt6+EqhpUI6z7eNXinJbotb/MLjhU1WSA20V2s+zaPvbiUn8LUvt7LhFKmah0Rg0SraXlJHgMju4zpOLJhVyxf7Qy1WPS1fJiXcQb7dg1IRfGNQzeEltyF99CWFFnCxyRCA4FAIJf8Af1DzvrSv8KKAAAAAElFTkSuQmCC"><span
+                                    data-v-50e93753="">Feedback</span></div>
+                            <div data-v-50e93753="" class="serviceCenter__container-items__item"
+                                onclick="location.href='/notification'"><img data-v-50e93753="" class=""
+                                    data-origin="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALgSURBVHgB7Zq/ixNBFMe/s8kFEZWAjeliE0sPrOxy2t6hNtZ3zR2Hdv4B5sBWsFCOpFH/AoWzN901FtqmWoigjSAIgkcyzzdzUSNcdnaz82MJ84HdbHY3uf3cezN5M7tAJBKJRCKVQaAi0CHa/NIFoclX1TzjlKHYxxAlqSMgLNlFPbkDSdv8tpl5siS1HqIkQYS1aE085mh2ZyLe8Cqs07YmXmpRv55/8SZML7CORLxh0TYCksAD1Mdd1MV73mwjMM6FdWTBaWzqlDzhNKV1m1VpXBFZhVGYejiPK7XbqNEtSN4uBHVRgTSexxzhVrLPF95h2WII/gyhg4qRKUwDLH/RhBuwiUg6NJCbc3s+4wRj8RDfUABThJeMELV4dRFWURmTbP23a031E+IY0+lRXnFXvfQ1+CKhm2gkj+g5Luc6HW5owSfEskq6b+5UHQiT+k9bTuc8f5alZe2+6TT7wgIXEApOb1OU7QtLXEJICNezDrtoww2EJMnuvLwMHqqEC+EThERinHXYvnCCXwjJhCuwDBxEWHxBKKQ8NlVc9oUJP3jtP8rEolMcmU5z1WmN4BMlO5FP89TTroRT+ILTGF/lk7yDB9NoaclIqXZMqi1brKnFCEL+S9kaC47xSfTws8CXZAuLXYy4VFPSywwTP/CyBVuQHPH1vENJcsxpyUOujzchk3V+5SqGds2fEQM3US5P4XtL1BfGKXSxR/p7Z5N4dqZnJR3wvaUeSuK0tOQLTDGhe7z5HRXBeS0tHuAjx3oHFZH2MngQe3jLkd6Az5+rBXgbLelIS5aW9BoB8To8VG2al22WVimeIgBBxsMs/Yp78qtzEU/hiaBPAMweYRiqYljfdKvzz9eUlwWPPMACQYXnOe3N9eKUOMWz6kThVScKrzpROAdpyeNBKS5sKv4DDw5MFBc+h2dYVBEJ3n96vLIUFhY7PJBv6KL/AH/SlyjV79doQx+PRCKRiB1+AweR1uvbjNhiAAAAAElFTkSuQmCC"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALgSURBVHgB7Zq/ixNBFMe/s8kFEZWAjeliE0sPrOxy2t6hNtZ3zR2Hdv4B5sBWsFCOpFH/AoWzN901FtqmWoigjSAIgkcyzzdzUSNcdnaz82MJ84HdbHY3uf3cezN5M7tAJBKJRCKVQaAi0CHa/NIFoclX1TzjlKHYxxAlqSMgLNlFPbkDSdv8tpl5siS1HqIkQYS1aE085mh2ZyLe8Cqs07YmXmpRv55/8SZML7CORLxh0TYCksAD1Mdd1MV73mwjMM6FdWTBaWzqlDzhNKV1m1VpXBFZhVGYejiPK7XbqNEtSN4uBHVRgTSexxzhVrLPF95h2WII/gyhg4qRKUwDLH/RhBuwiUg6NJCbc3s+4wRj8RDfUABThJeMELV4dRFWURmTbP23a031E+IY0+lRXnFXvfQ1+CKhm2gkj+g5Luc6HW5owSfEskq6b+5UHQiT+k9bTuc8f5alZe2+6TT7wgIXEApOb1OU7QtLXEJICNezDrtoww2EJMnuvLwMHqqEC+EThERinHXYvnCCXwjJhCuwDBxEWHxBKKQ8NlVc9oUJP3jtP8rEolMcmU5z1WmN4BMlO5FP89TTroRT+ILTGF/lk7yDB9NoaclIqXZMqi1brKnFCEL+S9kaC47xSfTws8CXZAuLXYy4VFPSywwTP/CyBVuQHPH1vENJcsxpyUOujzchk3V+5SqGds2fEQM3US5P4XtL1BfGKXSxR/p7Z5N4dqZnJR3wvaUeSuK0tOQLTDGhe7z5HRXBeS0tHuAjx3oHFZH2MngQe3jLkd6Az5+rBXgbLelIS5aW9BoB8To8VG2al22WVimeIgBBxsMs/Yp78qtzEU/hiaBPAMweYRiqYljfdKvzz9eUlwWPPMACQYXnOe3N9eKUOMWz6kThVScKrzpROAdpyeNBKS5sKv4DDw5MFBc+h2dYVBEJ3n96vLIUFhY7PJBv6KL/AH/SlyjV79doQx+PRCKRiB1+AweR1uvbjNhiAAAAAElFTkSuQmCC"><span
+                                    data-v-50e93753="">Notification</span></div>
+                            <div data-v-50e93753="" onclick="location.href='/keFuMenu'"
+                                class="serviceCenter__container-items__item"><img data-v-50e93753="" class=""
+                                    origin="https://9987up.co/assets/png/serviceCenter-3789e366.png"
+                                    src="https://9987up.co/assets/png/serviceCenter-3789e366.png"><span
+                                    data-v-50e93753="">24/7 Customer service</span></div>
+                            <div data-v-50e93753="" class="serviceCenter__container-items__item"><img data-v-50e93753=""
+                                    class=""
+                                    data-origin="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANHSURBVHgB7ZpNaxNBGMf/swlVSwOVXmztIb3Uk7TSLxDQu0LBg6f2YvEF9BuoePIgFFG0BbG9elLqtZJePClEPNlTTvbUUqgUW9k8/mdioWl3s7PJNtls5wdLNrOzu/nN88xkXwZwOBwOR3pRURXkGQo4j2H42IeHPa5vqptcTwHyDoPYRRF5LjVss6iq7qDabJ9QYXmPAR6ixAONBGze4Z6b3PaLDbGh7nO9A8grTPK8JeS9CYiUWFQ8VkmpJfi1J2HigcKU7cMWprlagB07EGwwA36qOX4miLw2gtdRkxl+HbTcrYo+uaJmTdQbyAdW38EU7GVh6iougnF581/ex49WI39MsiaISRF/8JCfj49uUCEnnOaWIbSLx5QH1tVtrNtUlwXcYEo+YIOV0D5VNSdjRwuDI5yErKbe/0cY9SnKfwsTZwPPwFOPoCMTO5ihFIMK8+gMBcqXjLiPFXUPv3WhSd0cRZOJqBWdEj6ggBxuyaJOdfWUopMJRtQKD91Ap7qW7QLdEe4iTjjrnDrh+KN0DqPw1bXQ7UoqHJAqSCnxhX11t/mFiZqg9Dqld5FC4qb0kMVVWD+XUaSUuMK8GZCVpjWUfGF0ra6du0H8lBZ84t3LZzbVuZDtHbk3bpXWLi090z9T2UejcH9LltjcPqYyteMLKz7CA65G1hOsmodFKSNeSivzlxMtW6+r6yXzICFB4vdh21G4Xi91aR0vpc3Vkzznp45ef5OaegRfRQppZdDSUUtd37TF3R5mHSecdZxw1nHCWccJZ51gYYU99D7bQYXBwoIt9Doia0HFYRH+il5HzJSHYwQKm4kpHsroVWoyG2sWzwHyli+w980ElyE2wABb7QySQqkFJAf7q1T5+9a4zDebqxU5Me0w8pLiZym+h4vQjZDDMFqldeFt9k/97uo7f32ZL9crUZPRGk6LNpAXjHg/LuAvxngkLW8/1SmOsDB6wEdG7wMbvBI0/8r6tEgQkwE5XLaSjxIWk6LLXCszgmUkRKLCh5EFStdwiWcYD6wQLKzTdVlHMknJhtPihDEDn2/kG2f3NQpXObIuM13n20lXG05c+DCyyGgfiNeFtaieCLqELKPT3UxKczgcDoejgX+TH/B4o6gbRQAAAABJRU5ErkJggg=="
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANHSURBVHgB7ZpNaxNBGMf/swlVSwOVXmztIb3Uk7TSLxDQu0LBg6f2YvEF9BuoePIgFFG0BbG9elLqtZJePClEPNlTTvbUUqgUW9k8/mdioWl3s7PJNtls5wdLNrOzu/nN88xkXwZwOBwOR3pRURXkGQo4j2H42IeHPa5vqptcTwHyDoPYRRF5LjVss6iq7qDabJ9QYXmPAR6ixAONBGze4Z6b3PaLDbGh7nO9A8grTPK8JeS9CYiUWFQ8VkmpJfi1J2HigcKU7cMWprlagB07EGwwA36qOX4miLw2gtdRkxl+HbTcrYo+uaJmTdQbyAdW38EU7GVh6iougnF581/ex49WI39MsiaISRF/8JCfj49uUCEnnOaWIbSLx5QH1tVtrNtUlwXcYEo+YIOV0D5VNSdjRwuDI5yErKbe/0cY9SnKfwsTZwPPwFOPoCMTO5ihFIMK8+gMBcqXjLiPFXUPv3WhSd0cRZOJqBWdEj6ggBxuyaJOdfWUopMJRtQKD91Ap7qW7QLdEe4iTjjrnDrh+KN0DqPw1bXQ7UoqHJAqSCnxhX11t/mFiZqg9Dqld5FC4qb0kMVVWD+XUaSUuMK8GZCVpjWUfGF0ra6du0H8lBZ84t3LZzbVuZDtHbk3bpXWLi090z9T2UejcH9LltjcPqYyteMLKz7CA65G1hOsmodFKSNeSivzlxMtW6+r6yXzICFB4vdh21G4Xi91aR0vpc3Vkzznp45ef5OaegRfRQppZdDSUUtd37TF3R5mHSecdZxw1nHCWccJZ51gYYU99D7bQYXBwoIt9Doia0HFYRH+il5HzJSHYwQKm4kpHsroVWoyG2sWzwHyli+w980ElyE2wABb7QySQqkFJAf7q1T5+9a4zDebqxU5Me0w8pLiZym+h4vQjZDDMFqldeFt9k/97uo7f32ZL9crUZPRGk6LNpAXjHg/LuAvxngkLW8/1SmOsDB6wEdG7wMbvBI0/8r6tEgQkwE5XLaSjxIWk6LLXCszgmUkRKLCh5EFStdwiWcYD6wQLKzTdVlHMknJhtPihDEDn2/kG2f3NQpXObIuM13n20lXG05c+DCyyGgfiNeFtaieCLqELKPT3UxKczgcDoejgX+TH/B4o6gbRQAAAABJRU5ErkJggg=="><span
+                                    data-v-50e93753="">Beginner's Guide</span></div>
+                            <div data-v-50e93753="" onclick="location.href='/about'"
+                                class="serviceCenter__container-items__item"><img data-v-50e93753="" class=""
+                                    data-origin="https://9987up.co/assets/png/about-eb7d02f7.png"
+                                    src="https://9987up.co/assets/png/about-eb7d02f7.png"><span data-v-50e93753="">About
+                                    us</span></div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div data-v-8cd483ca="" class="logout-btn m-t-40" style="margin-top: 0rem!important">
+                    <div data-v-8cd483ca="" class="gradient">
+                        <button data-v-8cd483ca=""
+                            class="logout van-button van-button--default van-button--normal van-button--block van-button--round"
+                            style="display: -webkit-box;display: -webkit-flex;display: flex;-webkit-box-align: center;-webkit-align-items: center;align-items: center;-webkit-box-pack: center;-webkit-justify-content: center;justify-content: center;gap: 0.13333rem;width: 100%;height: 100%;padding-block: 0.13333rem;color: #636363;background: none;border: 0.01333rem solid #888888;border-radius: 0.53333rem;border-radius: 99rem;outline: none;font-size: .4rem;">
+                            <i class="fa-duotone fa-power-off fa-fade fa-lg center"
+                                style="--fa-primary-color: #D9AC4F; --fa-secondary-color: #D9AC4F; --fa-secondary-opacity: 0.5;"></i>
+                            <div data-v-8cd483ca="" class="van-button__content">
+                                <span data-v-8cd483ca="" class="van-button__text">
+                                    <span data-v-8cd483ca="">Log-Out</span>
+                                </span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+
+            </div>
+            <%- include('../nav') -%>
+        </div>
+
+        <div class="van-overlay" style="z-index: 2001;display: none;"></div>
+        <div role="dialog" class="van-dialog" style="z-index: 2002;display: none;" aria-labelledby="Lời nhắc">
+            <div data-v-b9e16d43="" class="dialog__container-img"><img data-v-b9e16d43="" alt="" class=""
+                    src="https://91clubin.in/assets/png/orderCancelWarn-ac58c333.png"
+                    style="width: 2.13333rem;height: 2.13333rem"></div>
+            <div class="van-dialog__content">
+                <div class="van-dialog__message van-dialog__message--has-title dialog__container-title"
+                    style="font-size:0.27rem;font-weight: 700;color: #000000">
+                    <h1>Do you want to log out?</h1>
+                </div>
+            </div>
+            <div class="van--top van-dialog__footer van-dialog__footer--buttons">
+                <button class="van-button van-button--default van-button--large van-dialog__cancel"
+                    style="width: 3.12rem;height: 1.06667rem;color: #f95959;font-size: .42667rem;text-align: center;border-radius: 9rem;border: 0.01333rem solid #f95959;background: transparent">
+                    <div class="van-button__content">
+                        <span class="van-button__text">Cancel</span>
+                    </div>
+                </button>
+                <button class="van-button van-button--default van-button--large van-dialog__confirm van-hairline--left"
+                    style="width: 4.34667rem;height: 1.06667rem;font-size: .42667rem;text-align: center;border-radius: 9rem;border: 0.01333rem solid #f95959;color: #ededed;font-weight: 700;background: #eb8a1f;
+                box-shadow: 0 0.05333rem #e74141;">
+                    <div class="van-button__content">
+                        <span class="van-button__text">Confirm</span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/js/client.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+    <script>
+        new ClipboardJS('.id');
+
+        fetch('/api/webapi/GetUserInfo')
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === false) {
+                    unsetCookie();
+                    return false;
+                };
+                $('.userInfo__container-content-nickname .name').text(data.data.name_user);
+                $('.userInfo__container-content-uid .id').text(`ID:${data.data.id_user}`);
+                $('.userInfo__container-content-uid .id').attr('data-clipboard-text', `ID:${data.data.id_user}`);
+                $('.money .txt').text(` ₹ ${data.data.money_user} `);
+            });
+    </script>
+    <!---->
+    <script>
+        $('.reload_money').click(function (e) {
+            e.preventDefault();
+            $(this).addClass('action block-click');
+            setTimeout(() => {
+                $(this).removeClass('action block-click');
+            }, 3000);
+        });
+
+        window.onload = function () {
+            $('.Loading').fadeOut(10);
+        }
+        $('.van-dialog__cancel').click(function (e) {
+            e.preventDefault();
+
+            $('.van-dialog').addClass('van-dialog-bounce-leave-active van-dialog-bounce-leave-to');
+            setTimeout(() => {
+                $('.van-dialog').removeClass('van-dialog-bounce-leave-active van-dialog-bounce-leave-to');
+                $('.van-dialog, .van-overlay').fadeOut(50);
+            }, 200);
+        });
+        $('.logout').click(function (e) {
+            e.preventDefault();
+            $('.van-dialog, .van-overlay').css('display', '');
+            $('.van-dialog').addClass('van-dialog-bounce-enter-active van-dialog-bounce-enter-to');
+            setTimeout(() => {
+                $('.van-dialog').removeClass('van-dialog-bounce-enter-active van-dialog-bounce-enter-to');
+            }, 500);
+        });
+        function setCookie(cname, cvalue, exdays) {
+            const d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            let expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+        function getCookie(cname) {
+            let name = cname + "=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        function unsetCookie() {
+            setCookie('token', '', 0);
+            setCookie('auth', '', 0);
+            var checkToken = getCookie('token');
+            var checkAuth = getCookie('auth');
+            if (!checkToken && !checkAuth) {
+                location.href = "/login";
+            } else {
+                setCookie('token', '', 0);
+                setCookie('auth', '', 0);
+                location.href = "/login";
+            }
+        }
+
+        $('.van-dialog__confirm').click(function (e) {
+            e.preventDefault();
+            unsetCookie();
+        });
+
+        $(document).on('click', '.toggle-password', function () {
+
+            $(this).toggleClass("fa-eye-slash");
+
+            var input = $("#pass_log_id");
+            input.attr('type') === 'password' ? input.attr('type', 'text') : input.attr('type', 'password')
+        });
+
+        var isBalanceVisible = true;
+
+        function toggleBalanceVisibility() {
+            var actualBalance = document.getElementById("Balance");
+            var hiddenBalance = document.getElementById("balance_show");
+
+            isBalanceVisible = !isBalanceVisible;
+
+            if (isBalanceVisible) {
+                actualBalance.style.display = "inline";
+                hiddenBalance.style.display = "none";
+            } else {
+                actualBalance.style.display = "none";
+                hiddenBalance.style.display = "inline";
+            }
+        }
+
+    </script>
+    <script>
+        $(document).ready(function () {
+            // Select the overlay element
+            $('.van-overlay').fadeIn(10);
+        });
+        $(window).on('load', function () {
+            // Select the overlay element
+            $('.van-overlay').fadeIn(10);
+            setTimeout(function () {
+                $('.van-overlay').fadeOut(300);
+            }, 600);
+        });
+        // Get the draggable element
+        var draggableElement = document.getElementById('customerId');
+
+        // Variables to store mouse position
+        var offsetX = 0;
+        var offsetY = 0;
+
+        // Function to handle touch start event
+        function handleTouchStart(e) {
+            offsetX = e.touches[0].clientX - draggableElement.getBoundingClientRect().left;
+            offsetY = e.touches[0].clientY - draggableElement.getBoundingClientRect().top;
+        }
+
+        // Function to handle touch move event
+        function handleTouchMove(e) {
+            e.preventDefault();
+            var x = e.touches[0].clientX - offsetX;
+            var y = e.touches[0].clientY - offsetY;
+
+            // Update the position of the draggable element
+            draggableElement.style.left = x + 'px';
+            draggableElement.style.top = y + 'px';
+        }
+
+        // Add event listeners for touch events
+        draggableElement.addEventListener('touchstart', handleTouchStart, false);
+        draggableElement.addEventListener('touchmove', handleTouchMove, false);
+    </script>
+    <style>
+        .navbar[data-v-106b99c8] {
+            width: 100%;
+            max-width: 10.66667rem;
+            top: 0;
+            height: 1.33333rem;
+            line-height: 1.33333rem;
+            background: #eb8a1f;
+            box-shadow: inset 0rem 0rem 1rem 0rem #65006100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            color: #fff;
+            z-index: 999;
+        }
+
+        .mian .menu-box[data-v-8cd483ca] {
+            background: #f7f8ff;
+            height: 35rem;
+
+
+        }
+
+        .mian .menu-box .total-box[data-v-8cd483ca] {
+            background-color: #fff;
+            box-shadow: 0 .05333rem .21333rem .02667rem #d0d0ed5c;
+            height: 4rem;
+            padding: .4rem .13333rem;
+
+        }
+
+        .mian[data-v-8cd483ca] {
+            background: #f7f8ff;
+            padding-top: 0rem;
+        }
+
+        .list[data-v-21f3500a] {
+            background: #f7f8ff;
+            box-shadow: 0 .05333rem .21333rem .02667rem #d0d0ed5c;
+
+        }
+
+        .list .item[data-v-21f3500a] {
+            color: rgb(0, 0, 0);
+        }
+
+        .footer .active.a[data-v-1785cbc9] {
+            background-image: url(/assets/png/active_b-4a60eef5.svg);
+        }
+
+        .footer .active[data-v-1785cbc9] {
+            padding-left: .6rem;
+            color: #acafc2;
+            font-size: .32rem;
+            background-repeat: no-repeat;
+            background-size: .48rem;
+            background-position: left;
+            background-image: url(/assets/svg/active-0d7a3379.svg);
+        }
+    </style>
+
+</body>
+
+</html>
