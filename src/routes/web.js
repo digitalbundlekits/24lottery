@@ -24,9 +24,7 @@ const initWebRouter = (app) => {
         return res.redirect('/home');
     });
     router.get('/home', homeController.homePage);
-    router.get('/notification', homeController.notification);
-    router.get('/firstrecharge', middlewareController, homeController.firstrecharge);
-
+    
     router.get('/checkIn', middlewareController, homeController.checkInPage);
     router.get('/dailytask', middlewareController, homeController.dailytask);
     router.get('/sprules', middlewareController, homeController.sprules);
@@ -57,15 +55,13 @@ const initWebRouter = (app) => {
 
     router.get('/mian', middlewareController, homeController.mianPage);
 
-    router.get('/details', middlewareController, homeController.details);
     router.get('/about', middlewareController, homeController.aboutPage);
     router.get('/redenvelopes', middlewareController, homeController.redenvelopes);
-    router.get('/betrecords', middlewareController, homeController.betrecords);
     router.get('/mian/forgot', middlewareController, homeController.forgot);
     router.get('/newtutorial', homeController.newtutorial);
     router.get('/about/privacyPolicy', middlewareController, homeController.privacyPolicy);
     router.get('/about/riskAgreement', middlewareController, homeController.riskAgreement);
-
+    
     router.get('/myProfile', middlewareController, homeController.myProfilePage);
 
 
@@ -93,8 +89,8 @@ const initWebRouter = (app) => {
     router.post('/api/webapi/login', accountController.login); // login
     router.post('/api/webapi/register', accountController.register); // register
     router.get('/api/webapi/GetUserInfo', middlewareController, userController.userInfo); // get info account
-    router.put('/api/webapi/change/userInfo', middlewareController, userController.changeUser); // get info account
-    router.put('/api/webapi/change/pass', middlewareController, userController.changePassword); // get info account
+    router.put('/api/webapi/change/userInfo',middlewareController, userController.changeUser); // get info account
+    router.put('/api/webapi/change/pass',middlewareController, userController.changePassword); // get info account
 
     // bet wingo
     router.post('/api/webapi/action/join', middlewareController, winGoController.betWinGo); // register
@@ -213,8 +209,8 @@ const initWebRouter = (app) => {
     router.post('/api/webapi/admin/k3/listOrders', adminController.middlewareAdminController, adminController.listOrderOldK3); // get info account
     router.post('/api/webapi/admin/5d/editResult', adminController.middlewareAdminController, adminController.editResult); // get info account
     router.post('/api/webapi/admin/k3/editResult', adminController.middlewareAdminController, adminController.editResult2); // get info account
-
-    return app.use('/', router);
+    
+    return app.use('/', router); 
 }
 
 module.exports = {

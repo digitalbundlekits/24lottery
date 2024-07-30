@@ -21,21 +21,6 @@
             padding: 0;
             margin: 0;
         }
-        .customer {
-      position: fixed;
-      bottom: 2.4rem;
-      right: .4rem;
-      width: 1.49333rem;
-      height: 1.49333rem;
-      border-radius: 50%;
-      z-index: 100
-    }
-
-    .customer img {
-      width: 100%;
-      height: 100%;
-      border-radius: 50%
-    }
 
         .mian[data-v-3966082f] {
             background-color: #fbfcfd
@@ -7240,7 +7225,7 @@
             top: 0;
             height: 1.33333rem;
             line-height: 1.33333rem;
-            background: #eb8a1f;
+            background: linear-gradient(180deg,#ff867a 0%,#f95959 100%);
             box-shadow: inset 0rem 0rem 1rem 0rem #65006100;
             display: flex;
             align-items: center;
@@ -7253,9 +7238,6 @@
 </head>
 
 <body style="font-size: 12px;">
-    <div class="customer" id="customerId" draggable="true" onclick="location.href='/keFuMenu'" style="--76181987: 'Roboto', 'Inter', sans-serif; --17a7a9f6: bahnschrift;">
-        <img class="" data-origin="/assets/png/icon_sevice-9f0c8455.png" src="/assets/png/icon_sevice-9f0c8455.png">
-    </div>
     <div id="app">
         <div data-v-3966082f="" class="mian">
             <div data-v-106b99c8="" data-v-3966082f="" class="navbar">
@@ -7379,33 +7361,6 @@
                 loads(response.datas);
             }
         });
-        // Get the draggable element
-    var draggableElement = document.getElementById('customerId');
-    
-    // Variables to store mouse position
-    var offsetX = 0;
-    var offsetY = 0;
-
-    // Function to handle touch start event
-    function handleTouchStart(e) {
-        offsetX = e.touches[0].clientX - draggableElement.getBoundingClientRect().left;
-        offsetY = e.touches[0].clientY - draggableElement.getBoundingClientRect().top;
-    }
-
-    // Function to handle touch move event
-    function handleTouchMove(e) {
-        e.preventDefault();
-        var x = e.touches[0].clientX - offsetX;
-        var y = e.touches[0].clientY - offsetY;
-        
-        // Update the position of the draggable element
-        draggableElement.style.left = x + 'px';
-        draggableElement.style.top = y + 'px';
-    }
-
-    // Add event listeners for touch events
-    draggableElement.addEventListener('touchstart', handleTouchStart, false);
-    draggableElement.addEventListener('touchmove', handleTouchMove, false);
     </script>
 </body>
 

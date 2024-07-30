@@ -118,9 +118,6 @@
 </head>
 
 <body style="font-size: 12px;">
-    <div class="customer" id="customerId" draggable="true" onclick="location.href='/keFuMenu'" style="--76181987: 'Roboto', 'Inter', sans-serif; --17a7a9f6: bahnschrift;">
-        <img class="" data-origin="/assets/png/icon_sevice-9f0c8455.png" src="/assets/png/icon_sevice-9f0c8455.png">
-    </div>
     <!-- <div id="app">
         <div data-v-51f72da1="" class="mian forgot">
             <div data-v-106b99c8="" data-v-51f72da1="" class="navbar" >
@@ -261,22 +258,7 @@
                                 <div data-v-34ec8998="" class="passwordInput__container-input">
                                     
                                         <input data-v-34ec8998="" type="password" id="passwordInput" placeholder="Please enter Password" maxlength="32" autocomplete="new-password">
-                                        <img src="/images/eyeInvisible-821d9d16.png" class="eye" id="togglePassword" style="width: .53333rem;
-    height: auto;">
-                            </div>
-                            <div data-v-34ec8998="" data-v-19b20cdb="" class="passwordInput__container">
-                                <div data-v-34ec8998="" class="passwordInput__container-label"><img data-v-34ec8998=""
-                                        class="passwordInput__container-label__icon"
-                                        data-src="/images/forgetpassword-3dde2500.png" src="/images/forgetpassword-3dde2500.png"
-                                        lazy="loaded"><span data-v-34ec8998="">Confirm Password</span></div>
-                                <div data-v-34ec8998="" class="passwordInput__container-input">
-        
-                                    <input data-v-34ec8998="" type="password" id="passwordInput"
-                                        placeholder="Please enter Confirm Password" maxlength="32" autocomplete="new-password">
-                                    <img src="/images/eyeInvisible-821d9d16.png" class="eye" id="togglePassword" style="height: .711rem;
-                                    width: .711rem;">
-                                </div>
-        
+                                        <img src="/images/eyeInvisible-821d9d16.png" class="eye" id="togglePassword">
                             </div>
 
                             <div data-v-43e166a5="" data-v-df327280="" class="verifyInput__container">
@@ -557,33 +539,6 @@
                 }
             });
         });
-        // Get the draggable element
-    var draggableElement = document.getElementById('customerId');
-    
-    // Variables to store mouse position
-    var offsetX = 0;
-    var offsetY = 0;
-
-    // Function to handle touch start event
-    function handleTouchStart(e) {
-        offsetX = e.touches[0].clientX - draggableElement.getBoundingClientRect().left;
-        offsetY = e.touches[0].clientY - draggableElement.getBoundingClientRect().top;
-    }
-
-    // Function to handle touch move event
-    function handleTouchMove(e) {
-        e.preventDefault();
-        var x = e.touches[0].clientX - offsetX;
-        var y = e.touches[0].clientY - offsetY;
-        
-        // Update the position of the draggable element
-        draggableElement.style.left = x + 'px';
-        draggableElement.style.top = y + 'px';
-    }
-
-    // Add event listeners for touch events
-    draggableElement.addEventListener('touchstart', handleTouchStart, false);
-    draggableElement.addEventListener('touchmove', handleTouchMove, false);
     </script>
 </body>
 

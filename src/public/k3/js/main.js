@@ -126,7 +126,7 @@ function reload_money() {
                 unsetCookie();
                 return false;
             }
-            $(".num .moneyU").text(`₹ ${data.data.money_user}`);
+            $(".num .moneyU").text(`₹ ${data.data.money_user} `);
             $(".Loading").fadeOut(0);
         });
 }
@@ -839,7 +839,7 @@ function sendGame1() {
             alertMess(response.message);
             let change = String(response.change);
             if (response.status) {
-                $('.moneyU').text(response.money + '.00 ₹ ');
+                $('.moneyU').text(response.money + '');
                 socket.emit('data-server-3', { change, gameJoin: 1, listJoin, money, xvalue, game: $('html').attr('data-dpr') });
             }
             dropDown();
@@ -882,7 +882,7 @@ function sendGame2() {
             alertMess(response.message);
             let change = String(response.change);
             if (response.status) {
-                $('.moneyU').text(response.money + '.00 ₹ ');
+                $('.moneyU').text(response.money + '');
                 socket.emit('data-server-3', { change, gameJoin: 2, listJoin, money, xvalue, game: $('html').attr('data-dpr') });
             }
             dropDown();
@@ -921,7 +921,7 @@ function sendGame3() {
             alertMess(response.message);
             let change = String(response.change);
             if (response.status) {
-                $('.moneyU').text(response.money + '.00 ₹ ');
+                $('.moneyU').text(response.money + '');
                 socket.emit('data-server-3', { change, gameJoin: 3, listJoin, money, xvalue, game: $('html').attr('data-dpr') });
             }
             dropDown();
@@ -969,7 +969,7 @@ function sendGame4() {
             alertMess(response.message);
             let change = String(response.change);
             if (response.status) {
-                $('.moneyU').text(response.money + '.00 ₹ ');
+                $('.moneyU').text(response.money + '');
                 socket.emit('data-server-3', { change, gameJoin: 4, listJoin, money, xvalue, game: $('html').attr('data-dpr') });
             }
             dropDown();

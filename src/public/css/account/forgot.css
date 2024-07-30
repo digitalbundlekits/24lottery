@@ -75,7 +75,7 @@
 }
 
 .register__container-remember[data-v-2e94f24d] .van-checkbox .van-checkbox__label span {
-    color: #eb8a1f;
+    color: #ff7172;
     font-size: .32rem
 }
 
@@ -105,7 +105,7 @@
     border-radius: 1.06667rem;
     border: none;
     text-shadow: 0 .05333rem .02667rem rgba(231,65,65,.5019607843);
-    background: #eb8a1f;
+    background: linear-gradient(180deg,#ff867a 0%,#f95959 100%);
 box-shadow: inset 0rem 0rem 1rem 0rem #65006100;
     display: -webkit-box;
     display: -webkit-flex;
@@ -125,7 +125,7 @@ box-shadow: inset 0rem 0rem 1rem 0rem #65006100;
 }
 
 .register__container-button .login[data-v-2e94f24d] {
-    border: .01333rem solid #eb8a1f;
+    border: .01333rem solid #ff7172;
     text-shadow: none;
     background: #ffffff;
     box-shadow: none;
@@ -140,14 +140,14 @@ box-shadow: inset 0rem 0rem 1rem 0rem #65006100;
 
 .register__container-button .loginin[data-v-2e94f24d] {
     font-size: .4rem;
-    color: #eb8a1f;
+    color: #ff7172;
     font-weight: 700;
     margin-left: .22667rem
 }
 
 .register__container-button span[data-v-2e94f24d] {
     margin-top: .32rem;
-    color: #eb8a1f;
+    color: #ff7172;
     font-size: .32rem
 }
 
@@ -155,14 +155,14 @@ box-shadow: inset 0rem 0rem 1rem 0rem #65006100;
     margin-top: -.26667rem;
     margin-bottom: .16rem;
     padding-left: .22667rem;
-    color: #eb8a1f;
+    color: #ff7172;
     font-size: .32rem
 }
 
 .register__container-tip[data-v-2e94f24d] {
     margin-top: .32rem;
     padding-left: .22667rem;
-    color: #eb8a1f;
+    color: #ff7172;
     font-size: .32rem;
     display: -webkit-box;
     display: -webkit-flex;
@@ -272,7 +272,7 @@ box-shadow: inset 0rem 0rem 1rem 0rem #65006100;
 }
 
 .register__container-remember[data-v-8ec8be46] .van-checkbox .van-checkbox__label span {
-    color: #eb8a1f;
+    color: #ff7172;
     font-size: .32rem
 }
 
@@ -302,7 +302,7 @@ box-shadow: inset 0rem 0rem 1rem 0rem #65006100;
     border-radius: 1.06667rem;
     border: none;
     background: -webkit-linear-gradient(top, #ff867a 0%, #f95959 100%);
-    background: #eb8a1f;
+    background: linear-gradient(180deg, #ff867a 0%, #f95959 100%);
     box-shadow: 0 .05333rem #e74141;
     display: -webkit-box;
     display: -webkit-flex;
@@ -322,7 +322,7 @@ box-shadow: inset 0rem 0rem 1rem 0rem #65006100;
 }
 
 .register__container-button .login[data-v-8ec8be46] {
-    border: .01333rem solid #eb8a1f;
+    border: .01333rem solid #ff7172;
     text-shadow: none;
     background: #ffffff;
     box-shadow: none;
@@ -337,14 +337,14 @@ box-shadow: inset 0rem 0rem 1rem 0rem #65006100;
 
 .register__container-button .loginin[data-v-8ec8be46] {
     font-size: .4rem;
-    color: #eb8a1f;
+    color: #ff7172;
     font-weight: 700;
     margin-left: .22667rem
 }
 
 .register__container-button span[data-v-8ec8be46] {
     margin-top: .32rem;
-    color: #eb8a1f;
+    color: #ff7172;
     font-size: .32rem
 }
 
@@ -352,14 +352,14 @@ box-shadow: inset 0rem 0rem 1rem 0rem #65006100;
     margin-top: -.26667rem;
     margin-bottom: .16rem;
     padding-left: .22667rem;
-    color: #eb8a1f;
+    color: #ff7172;
     font-size: .32rem
 }
 
 .register__container-tip[data-v-8ec8be46] {
     margin-top: .32rem;
     padding-left: .22667rem;
-    color: #eb8a1f;
+    color: #ff7172;
     font-size: .32rem;
     display: -webkit-box;
     display: -webkit-flex;

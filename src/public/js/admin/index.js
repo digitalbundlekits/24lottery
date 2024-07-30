@@ -175,7 +175,7 @@ function showListOrder4(list_orders, x) {
                         <div data-v-a9660e98="" class="van-col van-col--6">
                             <div data-v-a9660e98="" class="goItem c-row c-tc c-row-center">
                                 <div data-v-a9660e98="" class="c-tc c-row box c-row-center">
-                                    <span data-v-a9660e98="" style=" padding: 0px;" class="li ${list_orders.amount % 2 == 0 ? "red" : "green"}"></span>
+                                    <span data-v-a9660e98="" class="li ${list_orders.amount % 2 == 0 ? "red" : "green"}"></span>
                                     ${list_orders.amount == 0 || list_orders.amount == 5 ? '<span data-v-a9660e98="" class="li violet"></span>' : ""}
                                 </div>
                             </div>
@@ -308,7 +308,7 @@ function showListOrder3(list_orders, x) {
                         <div data-v-a9660e98="" class="van-col van-col--5">
                             <div data-v-a9660e98="" class="c-tc goItem">
                                 <!---->
-                                <span data-v-a9660e98="" style=" border: none; font-weight: 700; font-size: .66667rem;" class="${list_orders.amount % 2 == 0 ? "red" : "green"}"> ${list_orders.amount} </span>
+                                <span data-v-a9660e98="" class="${list_orders.amount % 2 == 0 ? "red" : "green"}"> ${list_orders.amount} </span>
                             </div>
                         </div>
                         <div data-v-a9660e98="" class="van-col van-col--5">
@@ -320,7 +320,7 @@ function showListOrder3(list_orders, x) {
                         <div data-v-a9660e98="" class="van-col van-col--6">
                             <div data-v-a9660e98="" class="goItem c-row c-tc c-row-center">
                                 <div data-v-a9660e98="" class="c-tc c-row box c-row-center">
-                                    <span data-v-a9660e98="" style=" padding: 0px;" class="li ${list_orders.amount % 2 == 0 ? "red" : "green"}"></span>
+                                    <span data-v-a9660e98="" class="li ${list_orders.amount % 2 == 0 ? "red" : "green"}"></span>
                                     ${list_orders.amount == 0 || list_orders.amount == 5 ? '<span data-v-a9660e98="" class="li violet"></span>' : ""}
                                 </div>
                             </div>

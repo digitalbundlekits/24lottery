@@ -9,15 +9,6 @@ const homePage = async(req, res) => {
     let app = settings[0].app;
     return res.render("home/index.ejs", { app }); 
 }
-const firstrecharge = async(req, res) => {
-    return res.render("home/firstrecharge.ejs"); 
-}
-const allgames = async(req, res) => {
-    return res.render("home/allgames.ejs"); 
-}
-const details = async(req, res) => {
-    return res.render("bet/details.ejs"); 
-}
 
 const checkInPage = async(req, res) => {
     return res.render("checkIn/checkIn.ejs"); 
@@ -28,9 +19,6 @@ const inviterule = async(req, res) => {
 const dailytask = async(req, res) => {
     return res.render("checkIn/dailytask.ejs"); 
 }
-const notification = async(req, res) => {
-    return res.render("home/notification.ejs"); 
-}
 const sprules = async(req, res) => {
     return res.render("checkIn/sprules.ejs"); 
 }
@@ -38,7 +26,6 @@ const sprules = async(req, res) => {
 const superjackpot = async(req, res) => {
     return res.render("checkIn/superjackpot.ejs"); 
 }
-
 
 const checkDes = async(req, res) => {
     return res.render("checkIn/checkDes.ejs"); 
@@ -141,9 +128,6 @@ const forgot = async(req, res) => {
 const redenvelopes = async(req, res) => {
     return res.render("member/redenvelopes.ejs"); 
 }
-const betrecords = async(req, res) => {
-    return res.render("member/betrecords.ejs"); 
-}
 
 const riskAgreement = async(req, res) => {
     return res.render("member/about/riskAgreement.ejs"); 
@@ -181,14 +165,10 @@ const myProfilePage = async(req, res) => {
 
 module.exports = {
     homePage,
-    notification,
     checkInPage,
     dailytask,
     sprules,
-    details,
     superjackpot,
-    firstrecharge,
-    allgames,
     inviterule,
     promotionPage,
     walletPage,
@@ -213,7 +193,6 @@ module.exports = {
     riskAgreement,
     newtutorial,
     redenvelopes,
-    betrecords,
     forgot,
     checkDes,
     checkRecord,

@@ -677,9 +677,11 @@ input[type=number] {
 }
 
 .van-dialog {
-    top: 50% !important;
+    top: 46% !important;
+    left: 50%;
+    right: 50%;
     width: 8rem !important;
-    border-radius: .26667rem !important
+    border-radius: .26667rem !important;
 }
 
 .van-dialog__message img {
@@ -902,7 +904,8 @@ img[data-v-7b9b9922] {
     top: 0;
     height: 1.33333rem;
     line-height: 1.33333rem;
-    background: linear-gradient(90deg, rgb(255, 152, 1) 0%, rgb(230, 116, 1) 100%);
+    background-image: rgb(43, 50, 112);
+    ;
     display: flex;
     align-items: center;
     justify-content: center;

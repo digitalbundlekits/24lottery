@@ -619,9 +619,9 @@ const recharge = async (req, res) => {
     let utr = req.body.utr;
 
     if (type != 'cancel' && type != 'submit' && type != 'submitauto') {
-        if (!auth || !money || money <= 349) {
+        if (!auth || !money || money <= 199) {
             return res.status(200).json({
-                message: 'Minimum recharge 350',
+                message: 'Minimum recharge 200',
                 status: false,
                 timeStamp: timeNow,
             })

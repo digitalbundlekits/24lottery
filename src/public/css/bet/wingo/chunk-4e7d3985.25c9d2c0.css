@@ -20,11 +20,8 @@
 
 .game-head[data-v-a9660e98] {
     padding: .4rem .4rem 1.86667rem;
-    background: linear-gradient(90deg, rgb(255, 153, 1) 0%, rgb(230, 115, 1) 100%);
-
-    background-size: 100% 100%;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+    background: url(/images/bg_top_red.webp) no-repeat 0 0;
+    background-size: 100% 100%
 }
 
 .game-head .total-box[data-v-a9660e98] {
@@ -57,39 +54,6 @@
         -webkit-transform: rotate(180deg)
     }
 }
-.Wallet__C-balance-l1[data-v-ed6673b8] {
-    min-height: .58667rem;
-    line-height: .58667rem;
-    text-align: center;
-    font-weight: 700;
-    font-size: .48rem;
-    color: #222;
-    overflow: hidden;
-}.Wallet__C-balance-l2[data-v-ed6673b8] {
-    height: .53333rem;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-    -webkit-justify-content: space-evenly;
-    justify-content: space-evenly;
-    margin-top: .18667rem;
-    font-size: .34667rem;
-    color: #3c3c3c;
-}.Wallet__C-balance-l2>div[data-v-ed6673b8] {
-    padding-left: .66667rem;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAMAAAC5zwKfAAAAe1BMVEUAAAD/P1T/PlP/9C3/R2T/Hzr/Ijv/Jz7/IDr/Mk7/O1L/Hzr/O1L/Nk7/Qlj/Qlz/IDr/PVP/ITv/Ij3/Hzr/PFL/1DL/8i//Ijz/O1L/8yv/Hzr/rjr/xTX/3C//6C3/aUj/ojz/Uk3/Xkr/lz7/RlD/dUb/hkH/0TJEpa1CAAAAGXRSTlMAYWKgE++BQsAi7+DbUkIysKCRcd/AwGJhd8HDxwAAARFJREFUWMPt1ElvgzAQhmHS2kAIS5ZueMAQyPb/f2E1VavK0OaQ+Q6RMu/JFz+yzOBI0/5uieVMbGOkl6yIrMFxKXFbEGe29F0C8WJLP6Wgy/utEI9KSkEvRjgqNE00OjtLs+xSNirz1rde3pr+KbnxP5tBktH5WNGVdtdOsslqQdlm+onyWthr6JW1uCoAF3LwSUEFFVRQQQjYN96FPUvAsWUCB46dg4IDe0iwdViwd2Bw77jD6exBYPvl8VGR4MgrjwEb3t7zqsOAZ95+GfgyMeDRcV3bOQwYnAwDHj0S5IYLFOQOHgpyp30T9PZ+Zy+2ggoqeI9gIQfLADSZ1MtNFFTlMi+rokmmXAgqTKQ9UJ9lIW92vx/DqgAAAABJRU5ErkJggg==);
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: .53333rem;
-}.Wallet__C-balance-l1>div[data-v-ed6673b8] {
-    position: relative;
-    word-break: break-all;
-    pointer-events: none;
-    width: -webkit-fit-content;
-    width: fit-content;
-    margin: auto;
-}
 
 .game-head .total-box .info .num[data-v-a9660e98] {
     color: black;
@@ -108,9 +72,7 @@
 
 .game-head .total-box .total-btn .item .btn[data-v-a9660e98] {
     height: .93333rem;
-    font-size: .4rem;
-    font-weight: 600;
-
+    font-size: .4rem
 }
 
 .game-head .notice[data-v-a9660e98] {
@@ -367,15 +329,8 @@
 
 .bettingMore[data-v-a9660e98] {
     padding: 0 .26667rem;
-    border: .01333rem solid #cbcbcb;
     height: .8rem;
-    line-height: .8rem;
-    border-radius: .26667rem;
-    padding: 0 0.72rem 0.7 0.24rem;
-    color: #686868;
-    font-size: .32rem;
-    position: relative;
-  
+    border: .02667rem solid #e2e2e2
 }
 
 .game-list[data-v-a9660e98] {
@@ -420,7 +375,7 @@
     font-size: .37333rem;
    
     box-shadow: none;
-    background: linear-gradient(180deg, #FF9901 0%, #E57201 100%);
+    background: linear-gradient(180deg, #ff7777 0%, #f74d4d 100%);
     font-weight: 600;
     color: #fff;
 }
@@ -445,7 +400,7 @@
 
 .game-list .list .wrap[data-v-a9660e98] {
     padding: 0.4rem;
-    background: #ffa43f;
+    background-color: #fd565c;
     /* border-top-right-radius: 0.26667rem; */
     /* border-top-left-radius: 0.26667rem; */
     border-radius: .13333rem .13333rem 0 0;
@@ -544,53 +499,21 @@
 .game-list .list .hb .qiu .li.action8[data-v-a9660e98] {
     border: none;
     color: #fff;
-    background: #ffa43f;
+    background-color: #fb4e4e;
     position: relative;
     z-index: 100
 }
 
 .game-list .list .hb .red[data-v-a9660e98] {
-    color: #fd565c;
-    border: .01333rem solid #fd565c;
-    border-radius: .13333rem;
-    height: .48rem;
-    line-height: .48rem;
-    font-size: .29333rem;
-    padding: 0 .48rem;
-    margin-bottom: .08rem;
-    align-content: center;
-    display: inline-flex;
-    align-items: center;
-    width: 2.2rem;
-    justify-content: center;
-
+    color: #d0322d
 }
 
 .game-list .list .hb .green[data-v-a9660e98] {
-    color: #47ba7c;
-    border: .01333rem solid #47ba7c;
-    border-radius: .13333rem;
-    height: .57rem;
-    line-height: 0.57rem;
-    font-size: .29333rem;
-    padding: 0 .48rem;
-    margin-bottom: .08rem;
-    align-content: center;
-    display: inline-flex;
-    align-items: center;
-    width: 2.2rem;
-    justify-content: center;
+    color: #4eaf56
 }
 
 .game-list .list .hb .blue[data-v-a9660e98] {
-    color: #2572d5;
-    height: .8rem;
-    line-height: .8rem;
-    width: .8rem;
-    font-size: .53333rem;
-    font-weight: 700;
-    font-size: .66667rem;
-
+    color: #2572d5
 }
 
 .game-list .list .hb .box .li[data-v-a9660e98] {
@@ -649,7 +572,7 @@
 }
 
 .game-list .list .hb .item .result .select.select-small[data-v-a9660e98] {
-    background: #6da7f4;
+    background: #5cba47;
     padding: 0;
     overflow: hidden
 }
@@ -688,35 +611,16 @@
 }
 
 .game-list .list .hb .item .info .money[data-v-a9660e98] {
-  
-    -webkit-flex: 1;
-    flex: 1;
     font-weight: 600;
-    display: flex;
-    font-size: .38333rem;
-    height: .96rem;
-    color: #fd565c;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-align: end;
-    -webkit-align-items: flex-end;
-    align-items: flex-end;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    flex-direction: column;
-    /* flex-direction: column; */
+    font-size: .42667rem
 }
 
-
+.game-list .list .hb .item .info .money .fail[data-v-a9660e98] {
+    color: #fb4e4e
+}
 
 .game-list .list .hb .item .info .money .success[data-v-a9660e98] {
-    color: #47ba7c;
-    margin: 0px 0px 0px 28px;
+    color: #5cba47
 }
 
 .game-list .list .hb .details[data-v-a9660e98] {
@@ -830,7 +734,7 @@
 .game .moveBox .moveHead[data-v-a9660e98] {
     border-radius: .26667rem .26667rem 0 0;
     height: 1.06667rem;
-    background: linear-gradient(90deg, rgb(255, 152, 1) 0%, rgb(230, 116, 1) 100%);
+    background-image: rgb(43, 50, 112);
     ;
     cursor: move;
     position: relative;
@@ -1107,9 +1011,12 @@
     display: inline-block;
     border-radius: .4rem;
     padding: 0 .4rem;
-    background-color: #eb8a1f;
+    background-color: #fb4e4e
 }
 
+.game-betting .content .box .color-box[data-v-a9660e98] {
+    padding: .13333rem
+}
 
 .game-betting .content .box .color-box .btn[data-v-a9660e98] {
     height: 1.06667rem;
@@ -1134,7 +1041,7 @@
 }
 
 .game-betting .content .box .color-box .red[data-v-a9660e98] {
-    background: #f00404;
+    background-color: #fb4e4e;
     border-radius: .4rem 0 .4rem 0;
     box-shadow: 0 0 .21333rem .02667rem rgba(251, 78, 78, .6)
 }
@@ -1211,19 +1118,17 @@
     margin-top: .26667rem
 }
 
-
 .game-betting .content .box .random-box .random[data-v-a9660e98] {
-    height: 0.8rem;
-    max-width: 5.6rem;
+    height: .8rem;
+    max-width: 1.6rem;
     word-break: break-all;
-    font-size: 0.32rem;
+    font-size: .32rem;
     display: inline-block;
-    width: 2.13333rem;
     background: 0 0;
-    color: #fd565c;
-    padding: 0px 0.09rem;
-    border: .02667rem solid #fd565c;
-    border-radius: .21333rem;
+    color: #333;
+    padding: 0 .05333rem;
+    border: .05333rem solid #f2413b;
+    border-radius: .26667rem
 }
 
 .game-betting .content .box .random-box .random.action[data-v-a9660e98] {
@@ -1298,8 +1203,7 @@
 }
 
 .game .betting-mark .info[data-v-a9660e98] {
-    padding: .4rem;
-    background: white;
+    padding: .4rem
 }
 
 .game .betting-mark .info .item[data-v-a9660e98] {
@@ -1394,8 +1298,8 @@
 .game .betting-mark.color9 .box[data-v-a9660e98],
 .game .betting-mark.colorgreen .box[data-v-a9660e98],
 .game .betting-mark.colorsmall .box[data-v-a9660e98] {
-    background: #6ca6f3;
-    background-image: linear-gradient(90deg,#6ca6f3 0%,#87bcf5 100%);
+    background: #26bd2f;
+    background-image: linear-gradient(90deg, #26bd2f, #75c76b);
     background-size: 100% 100%
 }
 
@@ -1415,7 +1319,7 @@
 }
 
 .game .betting-mark.color0 .box[data-v-a9660e98] {
-    background: #ffa43f;
+    background-color: #fb4e4e;
     background-image: linear-gradient(to bottom right, #fb4e4e 50%, #eb43dd 0) !important;
     background-size: 100% 100%
 }

@@ -1,5 +1,3 @@
-
-
 .ar-loading-view .loading-wrapper img[data-v-1690b988] {
     width: 2.66667rem
 }
@@ -179,59 +177,4 @@
     transform: rotate(45deg);
     -webkit-animation: animationContainer-1690b988 1s ease infinite;
     animation: animationContainer-1690b988 1s ease infinite
-}
-.ar-loading-view[data-v-1690b988] {
-    background-color: #0000004d;
-    width: 100%;
-    height: 100%;
-    z-index: 999;
-    left: 0;
-    position: fixed;
-}
-
-.ar-loading-view .loading-wrapper[data-v-1690b988] {
-    pointer-events: none;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-    height: 100%;
-    position: absolute;
-    width: 100%;
-}
-
-.ar-loading-view .loading-animat[data-v-1690b988] {
-    width: 4rem;
-    height: 4rem;
-}
-
-.com__box[data-v-1690b988] {
-    position: relative;
-    width: 2.66667rem;
-    height: 1.6rem;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-    z-index: 1000;
-}
-
-.loading[data-v-1690b988] {
-    width: 1.6rem;
-    height: 1.6rem;
-    position: relative;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-    -webkit-animation: animationContainer-1690b988 1s ease infinite;
-    animation: animationContainer-1690b988 1s ease infinite;
 }

@@ -902,7 +902,8 @@ img[data-v-7b9b9922] {
     top: 0;
     height: 1.33333rem;
     line-height: 1.33333rem;
-    background: linear-gradient(90deg, rgb(255, 152, 1) 0%, rgb(230, 116, 1) 100%);
+    background-image: rgb(43, 50, 112);
+    ;
     display: flex;
     align-items: center;
     justify-content: center;

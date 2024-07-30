@@ -24,9 +24,6 @@
 </head>
 
 <body style="font-size: 12px;">
-    <div class="customer" id="customerId" draggable="true" onclick="location.href='/keFuMenu'" style="--76181987: 'Roboto', 'Inter', sans-serif; --17a7a9f6: bahnschrift;">
-        <img class="" data-origin="/assets/png/icon_sevice-9f0c8455.png" src="/assets/png/icon_sevice-9f0c8455.png">
-    </div>
     <div id="app">
         <div data-v-9f3a9836="" class="mian">
             <div data-v-106b99c8="" data-v-9f3a9836="" class="navbar">
@@ -188,33 +185,6 @@
                 }
             });
         });
-        // Get the draggable element
-    var draggableElement = document.getElementById('customerId');
-    
-    // Variables to store mouse position
-    var offsetX = 0;
-    var offsetY = 0;
-
-    // Function to handle touch start event
-    function handleTouchStart(e) {
-        offsetX = e.touches[0].clientX - draggableElement.getBoundingClientRect().left;
-        offsetY = e.touches[0].clientY - draggableElement.getBoundingClientRect().top;
-    }
-
-    // Function to handle touch move event
-    function handleTouchMove(e) {
-        e.preventDefault();
-        var x = e.touches[0].clientX - offsetX;
-        var y = e.touches[0].clientY - offsetY;
-        
-        // Update the position of the draggable element
-        draggableElement.style.left = x + 'px';
-        draggableElement.style.top = y + 'px';
-    }
-
-    // Add event listeners for touch events
-    draggableElement.addEventListener('touchstart', handleTouchStart, false);
-    draggableElement.addEventListener('touchmove', handleTouchMove, false);
     </script>
 </body>
 
